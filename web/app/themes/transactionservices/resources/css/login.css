@@ -1,0 +1,78 @@
+body.login { 
+    background-color: #F9FAFB; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 1rem;
+    color: #374151;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.25rem; margin-bottom: 1.5rem; }
+h2 { font-size: 1.875rem; margin-bottom: 1.25rem; }
+h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+h4 { font-size: 1.25rem; margin-bottom: 0.75rem; font-weight: 600; }
+h5 { font-size: 1.125rem; margin-bottom: 0.5rem; font-weight: 600; }
+h6 { font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600; }
+
+p {
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+@media (min-width: 992px) {
+    #login {
+        width: 620px !important;
+    }
+    
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+}
+
+.login h1 a {
+    background-image: none !important;
+    text-indent: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+    line-height: 1.2 !important;
+    font-size: 0 !important;
+}
+
+.login h1 a::before {
+    font-size: 32px !important;
+    display: block !important;
+}
+
+#loginform { 
+    border-radius: 6px; 
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); 
+    border: 1px solid #E5E7EB; 
+    padding: 46px 34px;
+}
+
+.wp-core-ui .button-primary {
+    background-color: #fd6400 !important; 
+    border-color: #fd6400 !important;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:focus {
+    background-color: #e35a00 !important;
+    border-color: #e35a00 !important;
+}
+
+#backtoblog,
+.privacy-policy-page-link,
+.language-switcher {
+    display: none !important; 
+}

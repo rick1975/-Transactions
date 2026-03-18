@@ -1,0 +1,215 @@
+@import "tailwindcss" theme(static);
+@source "../views/";
+@source "../../app/";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+[x-cloak]{display: none !important}
+
+@layer base {
+  @theme { 
+    --color-primary: #fd6400;
+    --color-primary-dark: #e35a00;
+    --color-light: #ed9a56;
+    --color-trans-orange: #fd6400;
+    --color-trans-green: #c1e5e1;
+    --color-trans-green-dark: #addbd6;
+    --color-trans-yellow: #ffd42f;
+    --color-trans-yellowlight: #ebcc91;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+  }
+
+  body {
+    @apply bg-white text-gray-700 antialiased;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 1rem;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-pretty text-gray-800 leading-tight;
+  }
+
+  h1 { @apply text-3xl md:text-[2.6rem] mb-5; }
+  h2 { @apply text-3xl md:text-4xl mb-5; }
+  h3 { @apply text-2xl md:text-3xl mb-4; }
+  h4 { @apply text-xl md:text-2xl mb-3 font-semibold; }
+  h5 { @apply text-lg md:text-xl mb-2 font-semibold; }
+  h6 { @apply text-base md:text-lg mb-2 font-semibold; }
+
+  p {
+    @apply mb-4 text-gray-700;
+  }
+
+  .main p:last-of-type { @apply mb-0; } 
+
+  article h2 { @apply text-2xl md:text-3xl mb-3; }
+  article img { @apply py-4; }
+  
+  /* Links */
+  a {
+    @apply no-underline transition-colors duration-200 text-primary;
+  }
+
+  a:hover {
+    @apply text-primary-dark;
+  }
+
+  a:where(:not(.wp-element-button)) {
+    text-decoration: none !important;
+  }
+
+  /* Lists - Remove default list styles */
+  ul.wp-block-list {
+    @apply mb-4 ml-0 pl-4 list-disc;
+  }
+
+  li {
+    @apply mb-1;
+  }
+
+  /* Navigation menus - override margin and list style */
+  nav ul,
+  .footer ul {
+    @apply mb-0 list-none;
+  }
+
+  nav li,
+  .footer li {
+    @apply mb-0;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 pl-4 italic my-4 border-l-primary;
+  }
+
+  /* Images */
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-block px-5 py-1.5 rounded-lg font-medium transition-all duration-200 !text-gray-900 bg-trans-yellow;
+  }
+
+  .btn:hover {
+    @apply bg-trans-green -translate-y-px shadow-md;
+  }
+
+  .btn-outline {
+    @apply border-2 bg-transparent border-primary text-primary;
+  }
+
+  .btn-outline:hover {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer components {
+  /* Container */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Footer */
+  .footer {
+    @apply py-12 md:py-16 bg-trans-green text-gray-950;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-white rounded-lg shadow p-6 transition-shadow duration-200;
+  }
+
+  .card:hover {
+    @apply shadow-lg;
+  }
+}
+
+/* TranslatePress */
+.trp-shortcode-switcher {
+  @apply lg:border-white lg:mt-2;
+}
+
+.trp-shortcode-switcher:hover {
+  @apply border-gray-100;
+}
+
+/* Gravity Forms */
+.gform_wrapper input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
+.gform_wrapper select,
+.gform_wrapper textarea {
+  @apply border !border-gray-300 rounded py-5;
+}
+
+.gform_wrapper .gform_button,
+.gform_wrapper button[type="submit"] {
+  @apply !bg-primary text-white hover:!bg-trans-green hover:!text-gray-800;
+}
+
+.gform-theme--foundation .gform_fields {
+  row-gap: 30px;
+}
+
+.gform_wrapper .gform_validation_errors {
+  @apply mt-4 !rounded-2xl;
+}
+
+.gform_wrapper .gform_validation_errors ol {
+  @apply !pl-4;
+}
