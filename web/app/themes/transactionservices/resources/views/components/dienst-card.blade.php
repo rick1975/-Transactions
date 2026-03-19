@@ -5,17 +5,7 @@
 <article x-data="{ show: false }" x-intersect.once="show = true" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'" class="relative md:rounded-lg overflow-hidden group min-h-[320px] transition-all duration-700 ease-out">
 
   @if(has_post_thumbnail($post))
-  {!! wp_get_attachment_image(
-      get_post_thumbnail_id($post->ID),
-      'medium_large',
-      false,
-      [
-        'class' => 'absolute inset-0 w-full h-full object-cover',
-        'loading' => 'lazy',
-        'decoding' => 'async',
-        'sizes' => '(min-width:1024px) 33vw, 100vw'
-      ]
-  ) !!}
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ get_the_post_thumbnail_url($post->ID, 'large') }}')"></div>
   <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
   @endif
 
