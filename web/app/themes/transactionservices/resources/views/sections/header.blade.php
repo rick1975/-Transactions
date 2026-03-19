@@ -1,4 +1,4 @@
-<header class="banner bg-white shadow-sm" x-data="{ mobileOpen: false }">
+<header class="banner bg-white shadow-sm sticky top-0 z-50" x-data="{ mobileOpen: false }">
   <div class="container">
     <div class="flex items-center justify-between min-h-[74px] lg:min-h-[80px]">
       {{-- Logo --}}
