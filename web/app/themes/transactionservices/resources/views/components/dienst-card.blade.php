@@ -2,7 +2,7 @@
 
 @php(setup_postdata($post))
 
-<article x-data="{ show: false }" x-intersect.once="show = true" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'" class="relative md:rounded-lg overflow-hidden group h-full min-h-[320px] transition-all duration-700 ease-out">
+<article x-data="{ show: false }" x-intersect.once="show = true" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'" class="relative md:rounded-lg overflow-hidden group transition-all duration-700 ease-out"
 
   @if(has_post_thumbnail($post))
   {!! wp_get_attachment_image(
@@ -19,7 +19,7 @@
   <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
   @endif
 
-  <div class="relative z-10 p-6 flex flex-col justify-end h-full ">
+  <div class="relative z-10 p-6 flex flex-col justify-end min-h-[320px]">
     <h2 class="text-2xl font-semibold mb-2 text-white">{{ get_the_title($post) }}</h2>
 
     @if(has_excerpt($post))
