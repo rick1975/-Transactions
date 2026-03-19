@@ -16,7 +16,7 @@
         'sizes' => '(min-width:1024px) 33vw, 100vw'
       ]
   ) !!}
-  <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
+  <div class="absolute inset-0 bg-red-500/50 group-hover:bg-black/40 transition"></div>
   @endif
 
   <div class="relative z-10 p-6 flex flex-col justify-end min-h-[320px]">
