@@ -5,7 +5,7 @@
 <article x-data="{ show: false }" x-intersect.once="show = true" :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'" class="relative md:rounded-lg overflow-hidden group min-h-[320px] transition-all duration-700 ease-out">
 
   @if(has_post_thumbnail($post))
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ get_the_post_thumbnail_url($post->ID, 'large') }}')"></div>
+  <div class="absolute inset-0" style="background-image: url('{{ get_the_post_thumbnail_url($post->ID, 'large') }}'); background-size: cover; background-position: center;"></div>
   <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition"></div>
   @endif
 
