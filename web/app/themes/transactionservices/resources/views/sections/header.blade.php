@@ -82,7 +82,7 @@
       {{-- Desktop Navigation --}}
       @if($navigation)
         <nav class="hidden lg:block">
-          <ul class="flex items-center lg:space-x-4 xl:space-x-8 mb-0 text-sm">
+          <ul class="flex items-center lg:space-x-4 xl:space-x-8 mb-0 text-[1rem]">
             @foreach($navigation as $item)
               <li @if($item->children || (strtolower($item->label) === 'diensten' && !empty($diensten_menu))) 
                     x-data="{ open: false }" 

@@ -2,12 +2,38 @@ body.login {
     background-color: #F9FAFB; 
 }
 
+@font-face {
+  font-family: 'ArponaSans';
+  src: url('../fonts/arponasans-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArponaSans';
+  src: url('../fonts/arponasans-semibold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArponaSans';
+  src: url('../fonts/arponasans-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'ArponaSans', sans-serif;
     font-weight: 400;
     line-height: 1.75;
     font-size: 1rem;
-    color: #374151;
+    color: #374151;    
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {

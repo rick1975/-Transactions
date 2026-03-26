@@ -37,7 +37,8 @@
                 || is_post_type_archive('locatie')
                 || is_singular('locatie')
                 || is_home()
-                || is_category('kennisbank'))
+                || is_category('kennisbank')
+                || is_page('credentials'))
                   ? 'lg:max-w-6xl xxl:px-0' 
                   : 'md:max-w-[768px] lg:max-w-4xl'
               ) 
