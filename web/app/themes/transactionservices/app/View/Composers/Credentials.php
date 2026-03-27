@@ -41,7 +41,7 @@ class Credentials extends Composer
             $sql  = $wpdb->prepare($sql, $params);
         }
 
-        $sql .= ' ORDER BY volgorde ASC';
+        $sql .= ' ORDER BY datum DESC, volgorde ASC';
 
         return $wpdb->get_results($sql, ARRAY_A);
     }
