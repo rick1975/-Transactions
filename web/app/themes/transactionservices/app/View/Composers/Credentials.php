@@ -34,7 +34,7 @@ class Credentials extends Composer
             $params[] = intval($_GET['jaar']);
         }
 
-        $sql = "SELECT * FROM {$wpdb->prefix}credentials";
+        $sql = "SELECT * FROM {$wpdb->prefix}credentials ORDER BY volgorde ASC";
 
         if (!empty($where)) {
             $sql .= ' WHERE ' . implode(' AND ', $where);

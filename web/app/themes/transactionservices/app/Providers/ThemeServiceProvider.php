@@ -14,6 +14,7 @@ class ThemeServiceProvider extends SageServiceProvider
     public function register()
     {
         parent::register();
+        $this->app->register(CredentialsServiceProvider::class);
     }
 
     /**
