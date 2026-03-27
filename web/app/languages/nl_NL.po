@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-01-29 08:00:28+0000\n"
+"PO-Revision-Date: 2026-02-17 15:25:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -379,7 +379,7 @@ msgstr "Beschrijf in een paar woorden waar deze site over gaat. Dit is belangrij
 #: wp-includes/blocks/post-time-to-read/block.json
 msgctxt "block description"
 msgid "Show minutes required to finish reading the post. Can also show a word count."
-msgstr "Toon de minuten die vereist zijn om het bericht uit te lezen. Kan ook een woordaantal weergeven."
+msgstr "Minuten die vereist zijn om het bericht uit te lezen weergeven. Kan ook een woordaantal weergeven."
 
 #: wp-includes/blocks/post-time-to-read/block.json
 msgctxt "block title"
@@ -546,11 +546,11 @@ msgstr "Spiegelen"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1379
 msgid "Limit result set to attachments of a particular MIME type or MIME types."
-msgstr "Beperk de resultaten tot bijlagen van een bepaald MIME-type of bepaalde MIME-types."
+msgstr "Resultaten beperken tot bijlagen van een bepaald MIME-type of bepaalde MIME-types."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1369
 msgid "Limit result set to attachments of a particular media type or media types."
-msgstr "Beperk de resultaten tot bijlagen van een bepaald mediatype of mediatypen."
+msgstr "Resultaten beperken tot bijlagen van een bepaald mediatype of mediatypen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:677
 msgid "Unable to flip this image."
@@ -582,7 +582,7 @@ msgstr "Abilities die updates uitvoeren, vereisen de POST methode."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-abilities-v1-list-controller.php:357
 msgid "Limit results to abilities in specific ability category."
-msgstr "Beperk de resultaten tot abilities in een specifieke ability categorie."
+msgstr "Resultaten beperken tot abilities in een specifieke ability categorie."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-abilities-v1-list-controller.php:319
 msgid "Annotations for the ability."
@@ -1110,7 +1110,7 @@ msgstr "De weergavenaam van de gebruiker."
 
 #: wp-includes/abilities.php:147
 msgid "The user ID."
-msgstr "De gebruiker ID."
+msgstr "Het gebruiker ID."
 
 #: wp-includes/abilities.php:139
 msgid "Returns basic profile details for the current authenticated user to support personalization, auditing, and access-aware behavior."
@@ -1212,35 +1212,35 @@ msgstr "De ability meta moet een geldige `annotations` array leveren."
 
 #: wp-includes/abilities-api/class-wp-ability.php:307
 msgid "The ability properties should provide a valid `meta` array."
-msgstr "De eigenschappen van de ability moeten een geldige `meta` array opleveren."
+msgstr "De ability eigenschappen moeten een geldige `meta` array opleveren."
 
 #: wp-includes/abilities-api/class-wp-ability.php:301
 msgid "The ability properties should provide a valid `output_schema` definition."
-msgstr "De eigenschappen van de ability moeten een geldige `output_schema` definitie geven."
+msgstr "De ability eigenschappen moeten een geldige `output_schema` definitie geven."
 
 #: wp-includes/abilities-api/class-wp-ability.php:295
 msgid "The ability properties should provide a valid `input_schema` definition."
-msgstr "De eigenschappen van de ability moeten een geldige `input_schema` definitie bevatten."
+msgstr "De ability eigenschappen moeten een geldige `input_schema` definitie bevatten."
 
 #: wp-includes/abilities-api/class-wp-ability.php:288
 msgid "The ability properties must provide a valid `permission_callback` function."
-msgstr "De eigenschappen van de ability moeten een geldige `permission_callback` functie hebben."
+msgstr "De ability eigenschappen moeten een geldige `permission_callback` functie hebben."
 
 #: wp-includes/abilities-api/class-wp-ability.php:282
 msgid "The ability properties must contain a valid `execute_callback` function."
-msgstr "De eigenschappen van de ability moeten een geldige `execute_callback` functie bevatten."
+msgstr "De ability eigenschappen moeten een geldige `execute_callback` functie bevatten."
 
 #: wp-includes/abilities-api/class-wp-ability.php:276
 msgid "The ability properties must contain a `category` string."
-msgstr "De eigenschappen van de ability moeten een `categorie` string bevatten."
+msgstr "De ability eigenschappen moeten een `categorie` string bevatten."
 
 #: wp-includes/abilities-api/class-wp-ability.php:270
 msgid "The ability properties must contain a `description` string."
-msgstr "De eigenschappen van de ability moeten een `beschrijving` string bevatten."
+msgstr "De ability eigenschappen moeten een `beschrijving` string bevatten."
 
 #: wp-includes/abilities-api/class-wp-ability.php:264
 msgid "The ability properties must contain a `label` string."
-msgstr "De eigenschappen van de ability moeten een `label` string bevatten."
+msgstr "De ability eigenschappen moeten een `label` string bevatten."
 
 #. translators: %s: Property name.
 #: wp-includes/abilities-api/class-wp-ability.php:178
@@ -1443,7 +1443,7 @@ msgstr "Ongeldig wachtwoord."
 #. algorithms.
 #: wp-includes/pluggable.php:2721
 msgid "Unsupported hashing algorithm: %1$s. Supported algorithms are: %2$s"
-msgstr "Niet-ondersteund hash algoritme: %1$s. Ondersteunde algoritmen zijn: %2$s"
+msgstr "Niet ondersteund hash-algoritme: %1$s. Ondersteunde algoritmen zijn: %2$s"
 
 #: wp-includes/html-api/class-wp-html-processor.php:5727
 msgid "Cannot set bookmarks on tokens that do no appear in the original HTML text."
@@ -1452,12 +1452,12 @@ msgstr "Kan geen bladwijzers instellen op tokens die niet in de originele HTML t
 #. translators: %s: A tag name like IFRAME or TEXTAREA.
 #: wp-includes/html-api/class-wp-html-processor.php:515
 msgid "The context element \"%s\" is not supported."
-msgstr "Het context element \"%s\" wordt niet ondersteund."
+msgstr "Het contextelement \"%s\" wordt niet ondersteund."
 
 #. translators: %s: A tag name like INPUT or BR.
 #: wp-includes/html-api/class-wp-html-processor.php:495
 msgid "The context element cannot be a void element, found \"%s\"."
-msgstr "Het context element kan geen leeg element zijn, gevonden \"%s\"."
+msgstr "Het contextelement kan geen leeg element zijn, gevonden \"%s\"."
 
 #: wp-includes/html-api/class-wp-html-processor.php:481
 msgid "The context element must be a start tag."
@@ -1511,7 +1511,7 @@ msgstr "De gretigheidswaarde \"%s\" is verboden voor documentniveau speculatie r
 #. translators: %s: invalid eagerness value
 #: wp-includes/class-wp-speculation-rules.php:185
 msgid "The value \"%s\" is not a valid eagerness for a speculation rule."
-msgstr "De waarde \"%s\" is geen geldige gretigheid voor een speculatie regel."
+msgstr "De waarde \"%s\" is geen geldige gretigheid voor een speculatieregel."
 
 #. translators: 1: source value, 2: forbidden key
 #: wp-includes/class-wp-speculation-rules.php:154
@@ -1522,7 +1522,7 @@ msgstr "Een speculatie regel van bron \"%1$s\" mag geen \"%2$s\" sleutel bevatte
 #. translators: %s: invalid source value
 #: wp-includes/class-wp-speculation-rules.php:141
 msgid "The value \"%s\" is not a valid source for a speculation rule."
-msgstr "De waarde \"%s\" is geen geldige bron voor een speculatie regel."
+msgstr "De waarde \"%s\" is geen geldige bron voor een speculatieregel."
 
 #. translators: 1: allowed key, 2: alternative allowed key
 #: wp-includes/class-wp-speculation-rules.php:127
@@ -1537,12 +1537,12 @@ msgstr "Een speculatie regel met ID \"%s\" bestaat al."
 #. translators: %s: invalid ID value
 #: wp-includes/class-wp-speculation-rules.php:92
 msgid "The value \"%s\" is not a valid ID for a speculation rule."
-msgstr "De waarde \"%s\" is geen geldige ID voor een speculatie regel."
+msgstr "De waarde \"%s\" is geen geldige ID voor een speculatieregel."
 
 #. translators: %s: invalid mode value
 #: wp-includes/class-wp-speculation-rules.php:79
 msgid "The value \"%s\" is not a valid speculation rules mode."
-msgstr "De waarde \"%s\" is geen geldige speculatie regel modus."
+msgstr "De waarde \"%s\" is geen geldige speculatieregel modus."
 
 #: wp-includes/class-wp-post-type.php:993
 msgid "Add Page"
@@ -1655,7 +1655,7 @@ msgstr "Onbekende codering: "
 
 #: wp-includes/class-wp-phpmailer.php:50
 msgid "Message body empty"
-msgstr "Berichtinhoud leeg"
+msgstr "Bericht body leeg"
 
 #: wp-includes/class-wp-phpmailer.php:49
 msgid "SMTP Error: Data not accepted."
@@ -2213,7 +2213,7 @@ msgstr "Nieuwe patroon categorie naam"
 
 #: wp-includes/taxonomy.php:244
 msgid "Pattern Categories list navigation"
-msgstr "Patroon categorieën lijstnavigatie"
+msgstr "Patrooncategorieën lijstnavigatie"
 
 #: wp-includes/taxonomy.php:243
 msgid "Pattern Categories list"
@@ -2225,7 +2225,7 @@ msgstr "Een link naar een patroon categorie."
 
 #: wp-includes/taxonomy.php:241
 msgid "Pattern Category Link"
-msgstr "Patroon categorie link"
+msgstr "Patrooncategorie link"
 
 #: wp-includes/taxonomy.php:240
 msgid "Edit Pattern Category"
@@ -2589,25 +2589,25 @@ msgstr "Google Fonts"
 #: wp-includes/customize/class-wp-customize-site-icon-control.php:81
 #: wp-admin/options-general.php:134 wp-admin/js/site-icon.js:161
 msgid "App icon preview: The current image has no alternative text. The file name is: %s"
-msgstr "App icoon voorbeeld: De huidige afbeelding heeft geen alternatieve tekst, de bestandsnaam is: %s"
+msgstr "App icoon voorbeeld: de huidige afbeelding heeft geen alternatieve tekst, de bestandsnaam is: %s"
 
 #. translators: %s: The selected image alt text.
 #: wp-includes/customize/class-wp-customize-site-icon-control.php:73
 #: wp-admin/options-general.php:147 wp-admin/js/site-icon.js:150
 msgid "App icon preview: Current image: %s"
-msgstr "App icoon voorbeeld: Huidige afbeelding: %s"
+msgstr "App icoon voorbeeld: huidige afbeelding: %s"
 
 #. translators: %s: The selected image filename.
 #: wp-includes/customize/class-wp-customize-site-icon-control.php:103
 #: wp-admin/options-general.php:140 wp-admin/js/site-icon.js:168
 msgid "Browser icon preview: The current image has no alternative text. The file name is: %s"
-msgstr "Browser icoon voorbeeld: De huidige afbeelding heeft geen alternatieve tekst. De bestandsnaam is: %s"
+msgstr "Browser icoon voorbeeld: de huidige afbeelding heeft geen alternatieve tekst. De bestandsnaam is: %s"
 
 #. translators: %s: The selected image alt text.
 #: wp-includes/customize/class-wp-customize-site-icon-control.php:95
 #: wp-admin/options-general.php:153 wp-admin/js/site-icon.js:155
 msgid "Browser icon preview: Current image: %s"
-msgstr "Browser icoon voorbeeld: Huidige afbeelding: %s"
+msgstr "Browser icoon voorbeeld: huidige afbeelding: %s"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:73
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:75
@@ -2965,7 +2965,7 @@ msgstr "Pagina geladen."
 
 #: wp-includes/interactivity-api/class-wp-interactivity-api.php:247
 msgid "Loading page, please wait."
-msgstr "Pagina wordt geladen, even geduld."
+msgstr "Pagina aan het laden, even geduld."
 
 #. translators: %s: taxonomy's label
 #: wp-includes/blocks/post-terms.php:93
@@ -3062,7 +3062,7 @@ msgstr "Details"
 #: wp-includes/blocks/cover/block.json
 msgctxt "block description"
 msgid "Add an image or video with a text overlay."
-msgstr "Voeg een afbeelding of video toe met een tekst overlay."
+msgstr "Een afbeelding of video toevoegen met een tekst overlay."
 
 #: wp-includes/blocks/block/block.json
 msgctxt "block keyword"
@@ -3197,11 +3197,11 @@ msgstr "Patroon gepubliceerd."
 
 #: wp-includes/post.php:319
 msgid "Patterns list navigation"
-msgstr "Patronen lijst navigatie"
+msgstr "Patronenlijst navigatie"
 
 #: wp-includes/post.php:318
 msgid "Filter patterns list"
-msgstr "Filter lijst met patronen"
+msgstr "Lijst met patronen filteren"
 
 #: wp-includes/post.php:316
 msgid "No patterns found."
@@ -3481,7 +3481,7 @@ msgstr "De auteur naam."
 #: wp-includes/blocks/post-author-name/block.json
 msgctxt "block title"
 msgid "Author Name"
-msgstr "Auteurnaam"
+msgstr "Auteursnaam"
 
 #: wp-includes/blocks/page-list-item/block.json
 msgctxt "block keyword"
@@ -3496,7 +3496,7 @@ msgstr "Toont een pagina binnen een lijst van alle pagina's."
 #: wp-includes/blocks/page-list-item/block.json
 msgctxt "block title"
 msgid "Page List Item"
-msgstr "Pagina lijst item"
+msgstr "Paginalijst item"
 
 #: wp-includes/js/dist/edit-site.js:11755 wp-admin/includes/theme.php:346
 msgid "Style Variations"
@@ -3764,7 +3764,7 @@ msgstr "Reacties volgende pagina"
 #. translators: %s: Name of the post type e.g: "Post".
 #: wp-includes/post.php:2148 wp-includes/js/dist/edit-site.js:44254
 msgid "Single item: %s"
-msgstr "Enkel item: %s"
+msgstr "Enkelvoudig item: %s"
 
 #: wp-includes/js/dist/editor.js:14743 wp-admin/edit-form-blocks.php:204
 #: wp-admin/includes/class-wp-posts-list-table.php:1894
@@ -3789,7 +3789,7 @@ msgstr[1] "%s reacties"
 
 #: wp-signup.php:646
 msgid "Create a site or only a username:"
-msgstr "Maak een site of alleen een gebruikersnaam:"
+msgstr "Een site of alleen een gebruikersnaam aanmaken:"
 
 #: wp-signup.php:127
 msgid "Site Domain (subdomain only):"
@@ -3797,7 +3797,7 @@ msgstr "Site domein (alleen subdomein):"
 
 #: wp-signup.php:125
 msgid "Site Name (subdirectory only):"
-msgstr "Site naam (alleen subfolder):"
+msgstr "Sitenaam (alleen subfolder):"
 
 #. translators: %s: wp-config.php
 #: wp-load.php:88
@@ -3806,7 +3806,7 @@ msgstr "Er lijkt geen %s bestand te zijn. Het is nodig voordat de installatie ka
 
 #: wp-includes/user.php:5180
 msgid "The date and time the preferences were updated."
-msgstr "De voorkeuren voor datum en tijd zijn geüpdatet."
+msgstr "De datum en tijd voorkeuren zijn geüpdatet."
 
 #: wp-includes/theme.php:4164
 msgid "Whether the theme disables generated layout styles."
@@ -3826,7 +3826,7 @@ msgstr "Revisies niet ingeschakeld."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:89
 msgid "The template prefix for the created template. This is used to extract the main template type, e.g. in `taxonomy-books` extracts the `taxonomy`"
-msgstr "De template voorvoegsel voor de aangemaakte template. Dit wordt gebruikt om het belangrijkste template type te extraheren, bijv. in `taxonomie-boeken` wordt de `taxonomie` geëxtraheerd"
+msgstr "Het template voorvoegsel voor de aangemaakte template. Dit wordt gebruikt om het belangrijkste template type te extraheren, bijv. in `taxonomie-boeken` wordt de `taxonomie` geëxtraheerd"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:85
 msgid "Indicates if a template is custom or part of the template hierarchy"
@@ -4081,12 +4081,12 @@ msgstr "Auteur biografie"
 #: wp-includes/blocks/home-link/block.json
 msgctxt "block description"
 msgid "Create a link that always points to the homepage of the site. Usually not necessary if there is already a site title link present in the header."
-msgstr "Maak een link die altijd wijst naar de homepage van de site. Is normaliter niet nodig als er al een site titellink aanwezig is in de header."
+msgstr "Een link aanmaken die altijd wijst naar de homepage van de site. Is normaliter niet nodig als er al een sitetitel link aanwezig is in de header."
 
 #: wp-includes/blocks/home-link/block.json
 msgctxt "block title"
 msgid "Home Link"
-msgstr "Link naar beginpagina"
+msgstr "Home link"
 
 #: wp-includes/blocks/group/block.json
 msgctxt "block description"
@@ -4274,7 +4274,7 @@ msgstr "De video op de opgegeven URL kan niet worden geladen. Controleer of de U
 #. translators: %s: URL to media library.
 #: wp-includes/widgets/class-wp-widget-media-video.php:44
 msgid "That video cannot be found. Check your <a href=\"%s\">media library</a> and make sure it was not deleted."
-msgstr "Die video kan niet worden gevonden. Controleer je <a href=\"%s\">mediabibliotheek</a> en controleer of deze niet verwijderd is."
+msgstr "Deze video kan niet worden gevonden. Controleer je <a href=\"%s\">mediabibliotheek</a> en controleer of deze niet verwijderd is."
 
 #. translators: %s: URL to media library.
 #: wp-includes/widgets/class-wp-widget-media-image.php:44
@@ -4541,7 +4541,7 @@ msgstr "Template onderdeel"
 #: wp-includes/blocks/table/block.json
 msgctxt "block description"
 msgid "Create structured content in rows and columns to display information."
-msgstr "Maak gestructureerde inhoud in rijen en kolommen om informatie weer te geven."
+msgstr "Gestructureerde inhoud aanmaken in rijen en kolommen om informatie weer te geven."
 
 #: wp-includes/blocks/site-title/block.json
 msgctxt "block description"
@@ -4596,7 +4596,7 @@ msgstr "Reacties formulier"
 #: wp-includes/blocks/pattern/block.json
 msgctxt "block description"
 msgid "Show a block pattern."
-msgstr "Blokpatroon tonen."
+msgstr "Een blokpatroon weergeven."
 
 #: wp-includes/blocks/block/block.json
 msgctxt "block title"
@@ -4816,7 +4816,7 @@ msgstr "Berichttype om de templates voor te krijgen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:1019
 msgid "Limit to the specified template part area."
-msgstr "Tot het aangegeven template deelgebied beperken."
+msgstr "Beperken tot het aangegeven template deelgebied."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:400
 msgid "REST namespace route for the taxonomy."
@@ -4908,7 +4908,7 @@ msgstr "Het enkelvoudige label dat wordt gebruikt om dit type menu-item te besch
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php:857
 msgid "The target attribute of the link element for this menu item."
-msgstr "Het doel-attribuut van het link-element voor dit menu-item."
+msgstr "Het doelattribuut van het linkelement voor dit menu-item."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php:849
 msgid "The database ID of the original object this menu item represents, for example the ID for posts or the term_id for categories."
@@ -4960,7 +4960,7 @@ msgstr "Gelinkt object verkrijgen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php:467
 msgid "The url is required when using a custom menu item type."
-msgstr "De url is vereist als je een aangepast menu-item type gebruikt."
+msgstr "De URL is vereist als je een aangepast menu-item type gebruikt."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php:464
 msgid "The title is required when using a custom menu item type."
@@ -5054,7 +5054,7 @@ msgstr "Navigatiemenu's lijst navigatie"
 
 #: wp-includes/post.php:559
 msgid "Filter Navigation Menu list"
-msgstr "Filteren navigatie menulijst"
+msgstr "Navigatie menulijst filteren"
 
 #: wp-includes/post.php:558
 msgid "Uploaded to this Navigation Menu"
@@ -5141,7 +5141,7 @@ msgstr "Geüpload naar dit template-onderdeel"
 
 #: wp-includes/post.php:450
 msgid "Insert into template part"
-msgstr "Invoegen in template onderdeel"
+msgstr "In template onderdeel invoegen"
 
 #: wp-includes/post.php:449
 msgid "Template part archives"
@@ -5337,7 +5337,7 @@ msgstr "Pagina's"
 #: wp-includes/block-template-utils.php:160
 msgctxt "Template name"
 msgid "Single Posts"
-msgstr "Enkele berichten"
+msgstr "Enkelvoudige berichten"
 
 #: wp-includes/block-template-utils.php:152
 msgctxt "Template name"
@@ -5459,17 +5459,17 @@ msgstr "Licht groen cyaan tot helder groen cyaan"
 #: wp-includes/theme.json
 msgctxt "Gradient name"
 msgid "Vivid cyan blue to vivid purple"
-msgstr "Helder cyaan blauw tot helder paars"
+msgstr "Levendig cyaanblauw tot helder paars"
 
 #: wp-includes/theme.json
 msgctxt "Color name"
 msgid "Vivid purple"
-msgstr "Helder paars"
+msgstr "Levendig paars"
 
 #: wp-includes/theme.json
 msgctxt "Color name"
 msgid "Vivid cyan blue"
-msgstr "Helder cyaan blauw"
+msgstr "Levendig cyaanblauw"
 
 #: wp-includes/theme.json
 msgctxt "Color name"
@@ -5479,7 +5479,7 @@ msgstr "Bleek cyaan blauw"
 #: wp-includes/theme.json
 msgctxt "Color name"
 msgid "Vivid green cyan"
-msgstr "Helder groen cyaan"
+msgstr "Levendig groen cyaan"
 
 #: wp-includes/theme.json
 msgctxt "Color name"
@@ -5499,7 +5499,7 @@ msgstr "Stralend helder oranje"
 #: wp-includes/theme.json
 msgctxt "Color name"
 msgid "Vivid red"
-msgstr "Helder rood"
+msgstr "Levendig rood"
 
 #: wp-includes/theme.json
 msgctxt "Color name"
@@ -5529,7 +5529,7 @@ msgstr "Groot"
 #: wp-includes/theme.json
 msgctxt "Font size name"
 msgid "Medium"
-msgstr "Gemiddeld"
+msgstr "Medium"
 
 #: wp-includes/theme.json
 msgctxt "Font size name"
@@ -5648,7 +5648,7 @@ msgstr "poëzie"
 #: wp-includes/blocks/verse/block.json
 msgctxt "block description"
 msgid "Insert poetry. Use special spacing formats. Or quote song lyrics."
-msgstr "Voeg poëzie toe. Gebruik speciale ruimte formats. Of citeer muziekteksten."
+msgstr "Poëzie invoegen. Gebruik speciale ruimte formats. Of citeer muziekteksten."
 
 #: wp-includes/blocks/text-columns/block.json
 msgctxt "block description"
@@ -5663,7 +5663,7 @@ msgstr "Strepen"
 #: wp-includes/blocks/spacer/block.json
 msgctxt "block description"
 msgid "Add white space between blocks and customize its height."
-msgstr "Voeg ruimte toe tussen blokken en pas zijn hoogte aan."
+msgstr "Ruimte toevoegen tussen blokken en pas zijn hoogte aan."
 
 #: wp-includes/blocks/social-links/block.json
 msgctxt "block style label"
@@ -5823,7 +5823,7 @@ msgstr "Geef speciale visuele nadruk aan een citaat uit je tekst."
 #: wp-includes/blocks/preformatted/block.json
 msgctxt "block description"
 msgid "Add text that respects your spacing and tabs, and also allows styling."
-msgstr "Voeg tekst toe die je tussenruimte en tabs behoudt, en ook styling toestaat."
+msgstr "Tekst toevoegen die je tussenruimte en tabs behoudt, en ook styling toestaat."
 
 #: wp-includes/blocks/post-title/block.json
 msgctxt "block description"
@@ -5897,7 +5897,7 @@ msgstr "menu"
 #: wp-includes/blocks/page-list/block.json
 msgctxt "block description"
 msgid "Display a list of all pages."
-msgstr "Een lijst van alle pagina's tonen."
+msgstr "Toon een lijst van alle pagina's."
 
 #: wp-includes/blocks/page-list/block.json
 msgctxt "block title"
@@ -5947,7 +5947,7 @@ msgstr "afbeelding"
 #: wp-includes/blocks/media-text/block.json
 msgctxt "block description"
 msgid "Set media and words side-by-side for a richer layout."
-msgstr "Zet media en woorden naast elkaar in voor een rijkere lay-out."
+msgstr "Stel media en woorden naast elkaar in, voor een rijkere lay-out."
 
 #: wp-includes/blocks/loginout/block.json
 msgctxt "block keyword"
@@ -6106,7 +6106,7 @@ msgstr "afbeeldingen"
 #: wp-includes/blocks/gallery/block.json
 msgctxt "block description"
 msgid "Display multiple images in a rich gallery."
-msgstr "Meerdere afbeeldingen tonen in een rijke galerij."
+msgstr "Toon meerdere afbeeldingen in een rijke galerij."
 
 #: wp-includes/blocks/freeform/block.json
 msgctxt "block description"
@@ -6141,7 +6141,7 @@ msgstr "Een enkele kolom binnen een kolommenblok."
 #: wp-includes/blocks/code/block.json
 msgctxt "block description"
 msgid "Display code snippets that respect your spacing and tabs."
-msgstr "Stukjes code tonen die je spatiëring en tabs respecteren."
+msgstr "Toon code snippets die je spatiëring en tabs respecteren."
 
 #: wp-includes/blocks/calendar/block.json
 msgctxt "block keyword"
@@ -6206,7 +6206,7 @@ msgstr "Een simpele audiospeler insluiten."
 #: wp-includes/blocks/archives/block.json
 msgctxt "block description"
 msgid "Display a date archive of your posts."
-msgstr "Een datum archief tonen van je berichten."
+msgstr "Toon een datum archief van je berichten."
 
 #: wp-includes/option.php:2919
 msgid "Page on front"
@@ -6398,7 +6398,7 @@ msgstr "Widget type (id_base) is vereist."
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:321
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:393
 msgid "No widget was found with that id."
-msgstr "Er is geen widget gevonden met dat id."
+msgstr "Er is geen widget gevonden met dat ID."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:96
 msgid "Whether to force removal of the widget, or move it to the inactive sidebar."
@@ -6427,7 +6427,7 @@ msgstr "Beschrijving van de widget."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:409
 msgid "Human-readable name identifying the widget type."
-msgstr "Door mensen leesbare naam die het widget type identificeert."
+msgstr "Voor mensen leesbare naam die het widget type identificeert."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php:403
 msgid "Unique slug identifying the widget type."
@@ -6482,7 +6482,7 @@ msgstr "Inhoud van template."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:1072
 msgid "Source of template"
-msgstr "Bron van het template"
+msgstr "Bron van de template"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:1062
 msgid "Theme identifier for the template."
@@ -6498,7 +6498,7 @@ msgstr "ID van template."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:1015
 msgid "Limit to the specified post id."
-msgstr "Beperken tot het opgegeven bericht id."
+msgstr "Beperken tot het opgegeven bericht ID."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:542
 msgid "The template has already been deleted."
@@ -6513,7 +6513,7 @@ msgstr "Templates op basis van themabestanden kunnen niet worden verwijderd."
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:468
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:515
 msgid "No templates exist with that id."
-msgstr "Er bestaan geen templates met dat id."
+msgstr "Er bestaan geen templates met dat ID."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:190
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:256
@@ -6527,7 +6527,7 @@ msgstr "Je hebt geen toestemming om de templates op deze site te openen."
 #: wp-includes/rest-api/endpoints/class-wp-rest-template-revisions-controller.php:124
 #: wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php:115
 msgid "The id of a template"
-msgstr "De id van een template"
+msgstr "Het ID van een template"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:505
 msgid "Nested widgets."
@@ -6585,7 +6585,7 @@ msgstr "Er bestaat geen zijbalk met dat id."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:71
 msgid "The id of a registered sidebar"
-msgstr "Het id van een geregistreerde zijbalk"
+msgstr "Het ID van een geregistreerde zijbalk"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:735
 msgid "The ID for the author of the revision."
@@ -6759,7 +6759,7 @@ msgstr "Templates lijst"
 
 #: wp-includes/post.php:388
 msgid "Templates list navigation"
-msgstr "Templates lijst navigatie"
+msgstr "Templates lijstnavigatie"
 
 #: wp-includes/post.php:387
 msgid "Filter templates list"
@@ -6771,7 +6771,7 @@ msgstr "Geüpload naar deze template"
 
 #: wp-includes/post.php:385
 msgid "Insert into template"
-msgstr "Invoegen in template"
+msgstr "In template invoegen"
 
 #: wp-includes/post.php:384
 msgid "Template archives"
@@ -7062,7 +7062,7 @@ msgstr "Media & tekst"
 #: wp-includes/blocks/html/block.json
 msgctxt "block title"
 msgid "Custom HTML"
-msgstr "Eigen HTML"
+msgstr "Aangepaste HTML"
 
 #: wp-includes/blocks/file/block.json
 msgctxt "block title"
@@ -7170,7 +7170,7 @@ msgstr "De bevestigingssleutel ontbreekt in deze persoonlijke gegevens aanvraag.
 
 #: wp-includes/user.php:5029
 msgid "This personal data request has expired."
-msgstr "Deze persoonlijke gegevens aanvraag is verlopen."
+msgstr "Dit persoonsgegevens verzoek is verlopen."
 
 #: wp-includes/user.php:4837 wp-includes/user.php:5025
 #: wp-admin/includes/privacy-tools.php:23
@@ -7222,7 +7222,7 @@ msgstr "Een plugin stond deze gebeurtenis niet toe."
 
 #: wp-includes/cron.php:157
 msgid "A duplicate event already exists."
-msgstr "Er bestaat al een dubbele afspraak."
+msgstr "Er bestaat al een dubbel evenement."
 
 #: wp-includes/cron.php:97 wp-includes/cron.php:275
 msgid "A plugin prevented the event from being scheduled."
@@ -7271,7 +7271,7 @@ msgstr "Horizontale positie van links om het bijsnijden te beginnen als percenta
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1633
 msgid "Crop arguments."
-msgstr "Bijsnijden argumenten."
+msgstr "Argumenten bijsnijden."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:1628
 msgid "Crop type."
@@ -7364,7 +7364,7 @@ msgstr "Term ID lijst"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2958
 msgid "Limit response to posts modified before a given ISO8601 compliant date."
-msgstr "Beperk reacties tot berichten die zijn gewijzigd voor een gegeven ISO8601 conforme datum."
+msgstr "Reacties beperken tot berichten die zijn gewijzigd voor een gegeven ISO8601 conforme datum."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2927
 msgid "Limit response to posts modified after a given ISO8601 compliant date."
@@ -7425,7 +7425,7 @@ msgstr "Weergave"
 #: wp-includes/ms-functions.php:1818
 msgctxt "email \"From\" field"
 msgid "Site Admin"
-msgstr "Site beheer"
+msgstr "Sitebeheerder"
 
 #. translators: New site notification email. 1: User login, 2: Site URL, 3:
 #. Site title.
@@ -7563,7 +7563,7 @@ msgstr "Een UUID die door de applicatie wordt verstrekt om deze op unieke wijze 
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:796
 msgid "The unique identifier for the application password."
-msgstr "De unieke identifier voor het applicatie wachtwoord."
+msgstr "De unieke identifier voor het applicatiewachtwoord."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:532
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:757
@@ -7639,7 +7639,7 @@ msgstr "Je moet een array van bericht formats doorgeven."
 #. translators: %s: IP address of password reset requester.
 #: wp-includes/user.php:3343
 msgid "This password reset request originated from the IP address %s."
-msgstr "Deze aanvraag voor het resetten van het wachtwoord is afkomstig van het IP-adres %s."
+msgstr "Dit verzoek voor het resetten van het wachtwoord is afkomstig van het IP-adres %s."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3965
 #: wp-includes/class-wp-xmlrpc-server.php:3972
@@ -7986,7 +7986,7 @@ msgstr "Patroon \"%s\" niet gevonden."
 
 #: wp-includes/class-wp-block-patterns-registry.php:112
 msgid "Pattern content must be a string."
-msgstr "Patroon inhoud moet een string zijn."
+msgstr "Patrooninhoud moet een string zijn."
 
 #: wp-includes/class-wp-block-patterns-registry.php:102
 msgid "Pattern title must be a string."
@@ -7998,7 +7998,7 @@ msgstr "Patroonnaam moet een string zijn."
 
 #: wp-includes/media.php:5031
 msgid "Attachment details"
-msgstr "Bijlage details"
+msgstr "Bijlagedetails"
 
 #: wp-includes/media.php:4976 wp-includes/media.php:4998
 #: wp-includes/js/dist/block-library.js:13273
@@ -8163,7 +8163,7 @@ msgstr "Het blok icoon."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php:271
 msgid "The WordPress.org username of the block author."
-msgstr "De WordPress.org gebruiker naam van de blok auteur."
+msgstr "De WordPress.org gebruikersnaam van de blokauteur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php:266
 msgid "The number of blocks published by the same author."
@@ -8183,7 +8183,7 @@ msgstr "Het aantal waarderingen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php:246
 msgid "The star rating of the block."
-msgstr "De sterren waardering van het blok."
+msgstr "De sterrenwaardering van het blok."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php:241
 msgid "The block slug."
@@ -8203,7 +8203,7 @@ msgstr "De bloknaam, in namespace/bloknaam format."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php:58
 msgid "Sorry, you are not allowed to browse the block directory."
-msgstr "Je hebt geen toestemming om de blok directory te bekijken."
+msgstr "Je hebt geen toestemming om te bladeren in de blok directory."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1327
 msgid "This username is invalid because it uses illegal characters. Please enter a valid username."
@@ -8219,11 +8219,11 @@ msgstr "Het tekstdomein van de plugin."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:962
 msgid "Minimum required version of PHP."
-msgstr "Minimaal vereiste PHP-versie."
+msgstr "Minimum vereiste PHP versie."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:956
 msgid "Minimum required version of WordPress."
-msgstr "Minimaal vereiste WordPress versie."
+msgstr "Minimum vereiste WordPress versie."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:950
 msgid "Whether the plugin can only be activated network-wide."
@@ -8231,7 +8231,7 @@ msgstr "Of de plugin allen netwerkbreed kan worden geactiveerd."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:944
 msgid "The plugin version number."
-msgstr "Versienummer van de plugin."
+msgstr "Het versienummer van de plugin."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:938
 msgid "The plugin description formatted for display."
@@ -8251,15 +8251,15 @@ msgstr "Site adres van auteur van de plugin."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:915
 msgid "The plugin author."
-msgstr "Ontwikkelaar van de plugin."
+msgstr "De plugin auteur."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:908
 msgid "The plugin's website address."
-msgstr "Site adres van de plugin."
+msgstr "Het site adres van de plugin."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:902
 msgid "The plugin name."
-msgstr "Naam plugin."
+msgstr "De plugin naam."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:889
 msgid "The plugin file."
@@ -8280,7 +8280,7 @@ msgstr "Je hebt geen toestemming om deze plugin te deactiveren."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:542
 msgid "Cannot delete an active plugin. Please deactivate it first."
-msgstr "Een actieve plugin kun je niet verwijderen. Graag eerst deactiveren."
+msgstr "Kan een actieve plugin niet verwijderen. Graag eerst deactiveren."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:507
 #: wp-admin/includes/ajax-actions.php:4740 wp-admin/plugins.php:271
@@ -8289,7 +8289,7 @@ msgstr "Je hebt geen toestemming om plugins voor deze site te verwijderen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:359
 msgid "Unable to determine what plugin was installed."
-msgstr "Niet in staat te bepalen welke plugin werd geïnstalleerd."
+msgstr "Kan niet bepalen welke plugin werd geïnstalleerd."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:349
 #: wp-admin/includes/ajax-actions.php:4221
@@ -8353,7 +8353,7 @@ msgstr "De URL van de thema webpagina."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:608
 msgid "The theme's text domain."
-msgstr "Het tekst domein van het thema."
+msgstr "Het tekstdomein van het thema."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:602
 msgid "The theme tags, transformed for display."
@@ -8487,7 +8487,7 @@ msgstr "Inline CSS code die de CSS klasse registreert welke vereist is voor de s
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php:652
 msgid "The human-readable label for the style."
-msgstr "Het door mensen leesbare label voor de stijl."
+msgstr "Het voor mensen leesbare label voor de stijl."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php:647
 msgid "Unique name identifying the style."
@@ -8847,7 +8847,7 @@ msgstr "HTTP omleiding status code moet een omleiding code zijn, 3xx."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:3261
 msgid "Limit result set based on relationship between multiple taxonomies."
-msgstr "De resultaten beperken gebaseerd op de relatie tussen meerdere taxonomiën."
+msgstr "Resultaten beperken gebaseerd op de relatie tussen meerdere taxonomieën."
 
 #. translators: 1: The taxonomy name, 2: The property name, either 'rest_base'
 #. or 'name', 3: The conflicting value.
@@ -8873,7 +8873,7 @@ msgstr "Of het thema opteert om de editor stijlen CSS wrapper te gebruiken."
 
 #: wp-includes/theme.php:4222
 msgid "Custom gradient presets if defined by the theme."
-msgstr "Aangepaste verloop voorinstellingen indien gedefinieerd door het thema."
+msgstr "Aangepaste gradiënt voorinstellingen indien gedefinieerd door het thema."
 
 #: wp-includes/theme.php:4197
 msgid "Custom font sizes if defined by the theme."
@@ -9096,7 +9096,7 @@ msgstr "Geen media items gevonden. Probeer een andere zoekopdracht."
 #. translators: %d: Number of attachments found in a search.
 #: wp-includes/media.php:5026
 msgid "Number of media items found: %d"
-msgstr "Aantal gevonden media items: %d"
+msgstr "Aantal gevonden media-items: %d"
 
 #. translators: %s: Number of archives.
 #: wp-includes/post.php:3593
@@ -9182,7 +9182,7 @@ msgstr "Reacties feed"
 
 #: wp-includes/widgets/class-wp-widget-meta.php:74
 msgid "Entries feed"
-msgstr "Berichten feed"
+msgstr "Vermeldingen feed"
 
 #: wp-includes/script-loader.php:1015
 msgid "Unexpected response from the server. The file may have been uploaded successfully. Check in the Media Library or reload the page."
@@ -9255,7 +9255,7 @@ msgstr "Afbeeldingsgrootte in pixels"
 
 #: wp-includes/media-template.php:657
 msgid "Media title&hellip;"
-msgstr "Media titel&hellip;"
+msgstr "Mediatitel&hellip;"
 
 #: wp-includes/media-template.php:656
 msgid "Media title"
@@ -9314,7 +9314,7 @@ msgstr "Nieuwe versie beschikbaar."
 
 #: wp-includes/taxonomy.php:2618
 msgid "Could not insert term taxonomy into the database."
-msgstr "Niet mogelijk term in de database in te voegen."
+msgstr "Kon term niet in de database invoegen."
 
 #. translators: 1: Link to tutorial, 2: Additional link attributes, 3:
 #. Accessibility text.
@@ -9441,23 +9441,23 @@ msgstr "Ondersteuning"
 #. Network title.
 #: wp-includes/ms-functions.php:2912
 msgid "[%s] Network Admin Email Changed"
-msgstr "[%s] E-mailadres netwerkbeheerder gewijzigd"
+msgstr "[%s] e-mailadres netwerkbeheerder gewijzigd"
 
 #. translators: Email change notification email subject. %s: Network title.
 #: wp-includes/ms-functions.php:2849
 msgid "[%s] Network Admin Email Change Request"
-msgstr "[%s] Netwerkbeheer e-mail wijzigingsverzoek"
+msgstr "[%s] netwerkbeheer e-mail wijzigingsverzoek"
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title.
 #: wp-includes/functions.php:8184
 msgid "[%s] Admin Email Changed"
-msgstr "[%s] E-mailadres beheerder gewijzigd"
+msgstr "[%s] e-mailadres beheerder gewijzigd"
 
 #. translators: New email address notification email subject. %s: Site title.
 #: wp-includes/user.php:3902
 msgid "[%s] Email Change Request"
-msgstr "[%s] Verzoek om e-mail te wijzigen"
+msgstr "[%s] verzoek om e-mail te wijzigen"
 
 #. translators: Email change notification email subject. %s: Site title.
 #: wp-includes/user.php:2838
@@ -9482,7 +9482,7 @@ msgstr "Verlaten herstelmodus is mislukt. Probeer later opnieuw."
 
 #: wp-includes/class-wp-recovery-mode.php:243
 msgid "Exit recovery mode link expired."
-msgstr "Link voor het verlaten van herstelmodus is verlopen."
+msgstr "Herstelmodus link verlopen verlaten."
 
 #: wp-includes/class-wp-recovery-mode.php:189
 msgid "Failed to store the error."
@@ -9495,7 +9495,7 @@ msgstr "Fout is niet veroorzaakt door een plugin of thema."
 #. translators: %s: Site title.
 #: wp-includes/class-wp-recovery-mode-email-service.php:200
 msgid "[%s] Your Site is Experiencing a Technical Issue"
-msgstr "[%s] Je site ervaart een technisch probleem"
+msgstr "[%s] je site ervaart een technisch probleem"
 
 #: wp-includes/class-wp-recovery-mode-email-service.php:126
 msgid "Error Details"
@@ -9568,7 +9568,7 @@ msgstr "Site icoon selecteren"
 
 #: wp-includes/user.php:4769
 msgid "An incomplete personal data request for this email address already exists."
-msgstr "Er bestaat al een onvolledige persoonlijke gegevens aanvraag voor dit e-mailadres."
+msgstr "Er bestaat al een onvolledige persoonsgegevens aanvraag voor dit e-mailadres."
 
 #: wp-includes/class-wp-customize-widgets.php:808
 msgid "Keep widget settings and move it to the inactive widgets"
@@ -9802,7 +9802,7 @@ msgstr "Dit thema kon niet juist geladen worden en is gepauzeerd in de beheer ba
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:432
 msgid "Whether to show the taxonomy in the quick/bulk edit panel."
-msgstr "Bepaal of je de taxonomie in het snel/bulk bewerken paneel wil tonen."
+msgstr "Of je de taxonomie in het snel/bulk bewerken paneel wil weergeven."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:428
 msgid "Whether to make the taxonomy available for selection in navigation menus."
@@ -9832,7 +9832,7 @@ msgstr "<strong>Fout:</strong> er is geen account met die gebruikersnaam of dat 
 #: wp-includes/class-wp.php:326 wp-includes/ms-deprecated.php:277
 #: wp-includes/ms-deprecated.php:296
 msgid "A variable mismatch has been detected."
-msgstr "Een verkeerde variabele combinatie is ontdekt."
+msgstr "Een verkeerde variabele combinatie is gedetecteerd."
 
 #: wp-activate.php:30
 msgid "A key value mismatch has been detected. Please follow the link provided in your activation email."
@@ -9862,7 +9862,7 @@ msgstr "Je hebt geen toestemming om automatisch opgeslagen versies van dit beric
 #: wp-admin/includes/class-wp-posts-list-table.php:1997
 #: wp-admin/includes/meta-boxes.php:115 wp-admin/includes/meta-boxes.php:156
 msgid "Scheduled"
-msgstr "Gepland"
+msgstr "Ingepland"
 
 #: wp-includes/js/dist/block-library.js:53397
 #: wp-includes/js/dist/edit-post.js:1165 wp-includes/js/dist/edit-site.js:45535
@@ -10315,7 +10315,7 @@ msgstr ""
 #. title.
 #: wp-includes/user.php:4458
 msgid "[%s] Erasure Request Fulfilled"
-msgstr "[%s] Verwijderingsverzoek afgerond"
+msgstr "[%s] verwijderingsverzoek afgerond"
 
 #. translators: Do not translate SITENAME, USER_EMAIL, DESCRIPTION, MANAGE_URL,
 #. SITEURL; those are placeholders.
@@ -10645,7 +10645,7 @@ msgstr "Geïnstalleerd"
 #. translators: %s: Property of an object.
 #: wp-includes/rest-api.php:2419
 msgid "%1$s is not a valid property of Object."
-msgstr "%1$s is geen geldige eigenschap van Object."
+msgstr "%1$s is geen geldige eigenschap van object."
 
 #. translators: %s: URL to Add Themes admin screen.
 #: wp-includes/script-loader.php:1355
@@ -10680,7 +10680,7 @@ msgstr "+ Nieuw menu maken"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-location-control.php:85
 msgid "Create a menu for this location"
-msgstr "Een menu maken voor deze locatie"
+msgstr "Een menu aanmaken voor deze locatie"
 
 #. translators: 1: fopen(), 2: File name.
 #: wp-includes/class-wp-http-curl.php:199
@@ -10921,8 +10921,8 @@ msgstr "Homepage en berichtenpagina moeten verschillend zijn."
 #: wp-includes/widgets/class-wp-widget-custom-html.php:232
 msgid "There is %d error which must be fixed before you can save."
 msgid_plural "There are %d errors which must be fixed before you can save."
-msgstr[0] "Er is %d fout die moet worden gerepareerd alvorens je kan opslaan."
-msgstr[1] "Er zijn %d fouten die moeten worden gerepareerd alvorens je kan opslaan."
+msgstr[0] "Er is %d fout die moet worden opgelost alvorens je kan opslaan."
+msgstr[1] "Er zijn %d fouten die moeten worden opgelost alvorens je kan opslaan."
 
 #. translators: %s: URL to the Customizer to load the autosaved version.
 #: wp-includes/script-loader.php:1332
@@ -11605,7 +11605,7 @@ msgstr "Kan wijzigingen niet naar de prullenbak verplaatsen."
 
 #: wp-includes/class-wp-customize-manager.php:3162
 msgid "No changes saved yet, so there is nothing to trash."
-msgstr "Er zijn nog geen wijzigingen opgeslagen, dus er is niks om in de prullenbak te plaatsen."
+msgstr "Nog geen wijzigingen opgeslagen, dus er is niks om in de prullenbak te plaatsen."
 
 #: wp-includes/class-wp-customize-manager.php:3152
 msgid "There was an authentication problem. Please reload and try again."
@@ -11616,8 +11616,8 @@ msgstr "Er was een authenticatieprobleem. Verversen en opnieuw proberen."
 #: wp-includes/script-loader.php:1346 wp-includes/script-loader.php:1348
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
-msgstr[0] "Opslaan niet mogelijk, vanwege %s ongeldige instelling."
-msgstr[1] "Opslaan niet mogelijk, vanwege %s ongeldige instellingen."
+msgstr[0] "Kan niet opslaan, vanwege %s ongeldige instelling."
+msgstr[1] "Kan niet opslaan, vanwege %s ongeldige instellingen."
 
 #: wp-includes/class-wp-customize-manager.php:2685
 #: wp-includes/class-wp-customize-manager.php:2700
@@ -11651,7 +11651,7 @@ msgstr "Heb je net HTML geplakt?"
 
 #: wp-includes/widgets/class-wp-widget-text.php:544
 msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this screen. Check it out to add some custom code to your site!"
-msgstr "Heb je al gehoord dat we een &#8220;Eigen HTML&#8221;-widget hebben? Je kunt het vinden in de lijst met beschikbare widgets op dit scherm. Probeer het eens om eigen code toe te voegen aan je site!"
+msgstr "Heb je al gehoord dat we een &#8220;Aangepaste HTML&#8221;-widget hebben? Je kunt het vinden in de lijst met beschikbare widgets op dit scherm. Probeer het eens om eigen code toe te voegen aan je site!"
 
 #: wp-includes/widgets/class-wp-widget-text.php:542
 msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href=\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
@@ -11675,7 +11675,7 @@ msgstr "Sommige HTML-tags zijn niet toegestaan, waaronder:"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:54
 msgid "Custom HTML"
-msgstr "Eigen HTML"
+msgstr "Aangepaste HTML"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:46
 msgid "Arbitrary HTML code."
@@ -11741,7 +11741,7 @@ msgstr "Om je registratie te wijzigen of uit te schakelen, ga naar je <a href=\"
 
 #: wp-signup.php:958
 msgid "The network currently allows both site and user registrations."
-msgstr "Het netwerk staat op dit moment site- en gebruikersregistraties toe."
+msgstr "Het netwerk staat op dit moment site en gebruikersregistraties toe."
 
 #: wp-signup.php:955
 msgid "The network currently allows user registrations."
@@ -12085,11 +12085,11 @@ msgstr "R"
 
 #: wp-includes/class-wp-editor.php:1240
 msgid "Insert/edit media"
-msgstr "Invoegen/bewerken van media"
+msgstr "Media invoegen/bewerken"
 
 #: wp-includes/class-wp-editor.php:1237
 msgid "Insert/edit code sample"
-msgstr "Invoegen/bewerken van de voorbeeldcode"
+msgstr "Voorbeeldcode invoegen/bewerken"
 
 #: wp-includes/class-wp-editor.php:1236
 #: wp-includes/js/dist/block-library.js:52358
@@ -12104,11 +12104,11 @@ msgstr "Datum/tijd"
 #: wp-includes/class-wp-editor.php:1210
 msgctxt "Id for link anchor (TinyMCE)"
 msgid "Id"
-msgstr "Id"
+msgstr "ID"
 
 #: wp-includes/class-wp-editor.php:1209
 msgid "Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores."
-msgstr "Een Id moet beginnen met een letter, gevolgd door alleen letters, cijfers, streepjes, punten, dubbele punten of underscores."
+msgstr "Een ID moet beginnen met een letter, gevolgd door alleen letters, cijfers, streepjes, punten, dubbele punten of underscores."
 
 #: wp-includes/class-wp-customize-widgets.php:812
 msgid "You can navigate to other pages on your site while using the Customizer to view and edit the widgets displayed on those pages."
@@ -12148,7 +12148,7 @@ msgstr "Unieke identifier voor de term."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:137
 msgid "Required to be true, as terms do not support trashing."
-msgstr "Moet waar zijn, omdat termen geen prullenbak hebben."
+msgstr "Vereist om waar te zijn, omdat termen geen prullenbak hebben."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:58
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:373
@@ -12171,7 +12171,7 @@ msgstr "Een alfanumerieke identifier voor het berichttype."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:357
 msgid "Human-readable labels for the post type for various contexts."
-msgstr "Leesbare labels voor het berichttype voor verschillende contexten."
+msgstr "Voor mensen leesbare labels voor het berichttype voor verschillende contexten."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:345
 msgid "Whether or not the post type should have children."
@@ -12278,7 +12278,7 @@ msgstr "Je hebt geen toestemming om thema's te bekijken."
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:532
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:679
 msgid "Cannot set parent term, taxonomy is not hierarchical."
-msgstr "Niet mogelijk hoofdterm in te stellen, taxonomie is niet hiërarchisch."
+msgstr "Kan hoofd term niet instellen, taxonomie is niet hiërarchisch."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:424
 msgid "Term does not exist."
@@ -12298,7 +12298,7 @@ msgstr "De titel voor het berichttype."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:154
 msgid "Cannot view post type."
-msgstr "Niet mogelijk berichttype te bekijken."
+msgstr "Kan berichttype niet bekijken."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:306
 msgid "The title for the status."
@@ -12306,7 +12306,7 @@ msgstr "De titel voor de status."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:154
 msgid "Cannot view status."
-msgstr "Niet mogelijk status te bekijken."
+msgstr "Kan status niet bekijken."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:144
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:202
@@ -12697,7 +12697,7 @@ msgstr "Vind ons"
 #. translators: %s: The '\' character.
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1379
 msgid "Passwords cannot contain the \"%s\" character."
-msgstr "Wachtwoorden mogen niet het \"%s\" teken bevatten."
+msgstr "Wachtwoorden mogen niet het \"%s\" karakter bevatten."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1369
 msgid "Passwords cannot be empty."
@@ -12716,11 +12716,11 @@ msgstr "Besturingselementen weergeven"
 #: wp-includes/script-loader.php:1321 wp-admin/customize.php:270
 msgctxt "label for hide controls button without length constraints"
 msgid "Hide Controls"
-msgstr "Besturing verbergen"
+msgstr "Besturingselementen verbergen"
 
 #: wp-includes/media-template.php:428
 msgid "Document Preview"
-msgstr "Document voorbeeld"
+msgstr "Documentvoorbeeld"
 
 #: wp-includes/class-wp-customize-manager.php:5339
 msgid "Header Media"
@@ -12933,7 +12933,7 @@ msgstr "Je hebt geen toestemming om deze revisie te verwijderen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:587
 msgid "Cannot create existing user."
-msgstr "Bestaande gebruiker aanmaken niet mogelijk."
+msgstr "Kan bestaande gebruiker niet aanmaken."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php:702
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:542
@@ -13229,7 +13229,7 @@ msgstr "Het wachtwoord voor het bericht als dit met een wachtwoord is beschermd.
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:361
 msgid "Human-readable labels for the taxonomy for various contexts."
-msgstr "Voor mensen begrijpelijke labels voor de taxonomie in variërende context."
+msgstr "Voor mensen leesbare labels voor de taxonomie in variërende context."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:355
 msgid "Whether or not the taxonomy should have children."
@@ -13321,7 +13321,7 @@ msgstr "Resultaten beperken tot reacties, toegewezen aan specifieke bericht ID's
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1754
 msgid "Ensure result set excludes specific parent IDs."
-msgstr "Vaststellen dat resultaten specifieke hoofd ID's uitsluiten."
+msgstr "Zorg ervoor dat resultaten specifieke hoofd ID's uitsluiten."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1745
 msgid "Limit result set to comments of specific parent IDs."
@@ -13461,7 +13461,7 @@ msgstr "De reactie kan niet worden verwijderd."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1080
 msgid "The comment has already been trashed."
-msgstr "De reactie is al weggegooid."
+msgstr "De reactie is al naar de prullenbak verplaatst."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:961
 msgid "Updating comment failed."
@@ -13481,7 +13481,7 @@ msgstr "Aanmaken van een reactie vereist een geldige naam en e-mailadres van de 
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:646
 msgid "Cannot create existing comment."
-msgstr "Bestaande reactie kan niet aangemaakt worden."
+msgstr "Kan bestaande reactie niet aanmaken."
 
 #: wp-includes/class-wp-xmlrpc-server.php:3934 wp-includes/comment.php:3760
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:505
@@ -13639,7 +13639,7 @@ msgstr "De \"%s\" optiegroep is verwijderd. Gebruik een andere instellingengroep
 
 #: wp-includes/option.php:2944 wp-includes/js/dist/editor.js:6947
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles."
-msgstr "Sta link meldingen toe van andere blogs (pingbacks en trackbacks) op nieuwe artikelen."
+msgstr "Link meldingen toestaan van andere blogs (pingbacks en trackbacks) op nieuwe artikelen."
 
 #: wp-includes/option.php:2897
 msgid "Blog pages show at most."
@@ -13711,7 +13711,7 @@ msgstr "Thema's filteren"
 
 #: wp-includes/customize/class-wp-customize-themes-panel.php:48
 msgid "Change theme"
-msgstr "Wijzig thema"
+msgstr "Thema wijzigen"
 
 #: wp-includes/customize/class-wp-customize-theme-control.php:103
 msgid "Update now"
@@ -13813,7 +13813,7 @@ msgstr "Bericht"
 #. translators: 1: .mp4, 2: .mov
 #: wp-includes/class-wp-customize-manager.php:6102
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
-msgstr "Alleen %1$s- of %2$s-bestanden kunnen worden gebruikt als header video. Converteer je videobestand en probeer het opnieuw, of upload je video naar YouTube en link het met de optie hieronder."
+msgstr "Alleen %1$s of %2$s bestanden kunnen worden gebruikt als header video. Converteer je videobestand en probeer het opnieuw, of upload je video naar YouTube en link het met de optie hieronder."
 
 #: wp-includes/class-wp-customize-manager.php:6094
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
@@ -14166,7 +14166,7 @@ msgstr "Je hebt geen toestemming om concepten te bekijken."
 #. translators: Password change notification email subject. %s: Site title.
 #: wp-includes/pluggable.php:2213 wp-includes/user.php:2780
 msgid "[%s] Password Changed"
-msgstr "[%s] Wachtwoord gewijzigd"
+msgstr "[%s] wachtwoord gewijzigd"
 
 #. translators: %s: User name.
 #: wp-includes/pluggable.php:2203
@@ -14438,7 +14438,7 @@ msgstr "Logo"
 #: wp-includes/class-wp-customize-manager.php:5188
 #: wp-includes/class-wp-customize-manager.php:5295
 msgid "Display Site Title and Tagline"
-msgstr "Site titel en slogan tonen"
+msgstr "Toon site titel en slogan"
 
 #: wp-includes/class-wp-customize-manager.php:5045
 msgid "Enter mobile preview mode"
@@ -14589,11 +14589,11 @@ msgstr "Instellingen voor delen"
 
 #: wp-includes/class-wp-xmlrpc-server.php:654
 msgid "Medium-Large size image height"
-msgstr "Gemiddeld-grote afbeeldingshoogte"
+msgstr "Medium-grote afbeeldingshoogte"
 
 #: wp-includes/class-wp-xmlrpc-server.php:649
 msgid "Medium-Large size image width"
-msgstr "Gemiddeld-grote afbeeldingsbreedte"
+msgstr "Medium-grote afbeeldingsbreedte"
 
 #. translators: %s: Site link.
 #: wp-includes/theme-compat/sidebar.php:107
@@ -14722,7 +14722,7 @@ msgstr "Het is niet mogelijk de tagwolk te tonen, daar er geen taxonomieën zijn
 
 #: wp-includes/user.php:2312
 msgid "Nicename may not be longer than 50 characters."
-msgstr "Schermnaam mag niet langer zijn dan 50 tekens."
+msgstr "Schermnaam mag niet langer zijn dan 50 karakters."
 
 #. translators: %s: User name.
 #: wp-includes/user.php:215
@@ -14853,7 +14853,7 @@ msgstr "Sitenamen kunnen alleen kleine letters (a-z) en cijfers bevatten."
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1338
 #: wp-includes/user.php:2284
 msgid "Sorry, that username is not allowed."
-msgstr "Helaas, deze gebruikersnaam is niet toegestaan."
+msgstr "Deze gebruikersnaam is niet toegestaan."
 
 #: wp-includes/ms-functions.php:477
 msgid "Usernames can only contain lowercase letters (a-z) and numbers."
@@ -15171,7 +15171,7 @@ msgstr "Afbeelding verbergen"
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:242
 msgid "Hide header image"
-msgstr "Verberg kopafbeelding"
+msgstr "Kopafbeelding verbergen"
 
 #: wp-includes/class-wp-customize-manager.php:5210
 #: wp-includes/js/dist/edit-post.js:296 wp-includes/js/dist/edit-site.js:7742
@@ -15490,7 +15490,7 @@ msgstr "De zoekresultaten worden geüpdatet als je typt."
 
 #: wp-includes/class-wp-customize-nav-menus.php:1174
 msgid "Search Menu Items"
-msgstr "Menu-items doorzoeken"
+msgstr "Menu-items zoeken"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1169
 msgid "Add Menu Items"
@@ -15541,7 +15541,7 @@ msgstr "Onder %s"
 #. translators: %s: Previous item name.
 #: wp-includes/class-wp-customize-nav-menus.php:566 wp-admin/nav-menus.php:578
 msgid "Move out from under %s"
-msgstr "Verplaats van onder %s vandaan"
+msgstr "Van onder %s vandaan verplaatsen"
 
 #. translators: %s: Previous item name.
 #: wp-includes/class-wp-customize-nav-menus.php:564 wp-admin/nav-menus.php:576
@@ -15554,7 +15554,7 @@ msgstr "Naar bovenkant verplaatsen"
 
 #: wp-includes/class-wp-customize-nav-menus.php:561 wp-admin/nav-menus.php:573
 msgid "Move down one"
-msgstr "Verplaats één omlaag"
+msgstr "Eén omlaag verplaatsen"
 
 #: wp-includes/class-wp-customize-nav-menus.php:560 wp-admin/nav-menus.php:572
 msgid "Move up one"
@@ -15653,7 +15653,7 @@ msgstr "CSS klassen"
 #: wp-admin/includes/class-walker-nav-menu-edit.php:211
 #: wp-admin/includes/nav-menu.php:1357
 msgid "Title Attribute"
-msgstr "Titelattribuut"
+msgstr "Titel attribuut"
 
 #: wp-includes/class-wp-editor.php:1902
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:125
@@ -15723,7 +15723,7 @@ msgstr "Customizer"
 
 #: wp-includes/taxonomy.php:4308
 msgid "Could not split shared term."
-msgstr "Gedeelde term kon niet gesplitst worden."
+msgstr "Kon gedeelde term niet splitsen."
 
 #: wp-includes/taxonomy.php:528 wp-includes/taxonomy.php:529
 msgid "Taxonomy names must be between 1 and 32 characters in length."
@@ -15959,7 +15959,7 @@ msgstr "Editor-menu (indien ingeschakeld)"
 
 #: wp-includes/class-wp-editor.php:1407
 msgid "Focus shortcuts:"
-msgstr "Focus-sneltoets:"
+msgstr "Focus sneltoetsen:"
 
 #: wp-includes/class-wp-editor.php:1370
 msgid "Rich Text Area. Press Alt-Shift-H for help."
@@ -16036,7 +16036,7 @@ msgstr "Vorige"
 #. translators: Hidden accessibility text.
 #: wp-includes/link-template.php:2895 wp-includes/link-template.php:3035
 msgid "Posts navigation"
-msgstr "Berichten navigatie"
+msgstr "Berichtennavigatie"
 
 #: wp-includes/link-template.php:2894
 msgid "Newer posts"
@@ -16193,7 +16193,7 @@ msgstr "Geen bestand geselecteerd"
 
 #: wp-includes/customize/class-wp-customize-media-control.php:259
 msgid "Change file"
-msgstr "Wijzig bestand"
+msgstr "Bestand wijzigen"
 
 #: wp-includes/post.php:96
 msgctxt "post type general name"
@@ -16695,7 +16695,7 @@ msgstr "Van links naar rechts"
 #: wp-includes/class-wp-editor.php:1249
 msgctxt "editor button"
 msgid "Right to left"
-msgstr "Van rechts naar links"
+msgstr "Rechts naar links"
 
 #: wp-includes/class-wp-editor.php:1207
 msgctxt "Link anchors (TinyMCE)"
@@ -16788,7 +16788,7 @@ msgstr "Alternatieve bronnen toevoegen voor betere HTML5-ondersteuning"
 
 #: wp-includes/user.php:3023
 msgid "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
-msgstr "Hint: het wachtwoord moet minimaal twaalf tekens lang zijn. Gebruik hoofd- en kleine letters, cijfers en tekens zoals ! \" ? $ % ^ &amp; ) om het sterker te maken."
+msgstr "Hint: het wachtwoord moet minimaal twaalf karakters lang zijn. Gebruik hoofd- en kleine letters, cijfers en symbolen zoals ! \" ? $ % ^ &amp; ) om het sterker te maken."
 
 #. translators: %s: wpdb::prepare()
 #: wp-includes/class-wpdb.php:1482
@@ -16924,7 +16924,7 @@ msgstr "Terug"
 
 #: wp-includes/media-template.php:1503
 msgid "There are no associated subtitles."
-msgstr "Geen ondertitels beschikbaar."
+msgstr "Er is geen bijbehorende ondertitel."
 
 #: wp-includes/media-template.php:1450
 msgid "Poster Image"
@@ -17082,7 +17082,7 @@ msgstr "Insluiten"
 
 #: wp-includes/class-wp-editor.php:1244
 msgid "Insert video"
-msgstr "Video toevoegen"
+msgstr "Video invoegen"
 
 #: wp-includes/class-wp-editor.php:1243
 msgid "Paste your embed code below:"
@@ -17242,7 +17242,7 @@ msgstr "Widget toevoegen"
 #: wp-includes/customize/class-wp-customize-header-image-control.php:255
 msgctxt "custom headers"
 msgid "Suggested"
-msgstr "Aangeraden"
+msgstr "Voorgesteld"
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:248
 msgctxt "custom headers"
@@ -17346,7 +17346,7 @@ msgstr "Een cloud van je meest gebruikte tags."
 
 #: wp-includes/widgets/class-wp-widget-rss.php:26
 msgid "Entries from any RSS or Atom feed."
-msgstr "Berichten van RSS- of Atom-feed."
+msgstr "Vermeldingen van RSS of Atom feed."
 
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:27
 msgid "Your site&#8217;s most recent comments."
@@ -17659,7 +17659,7 @@ msgstr "Willekeurige volgorde"
 
 #: wp-includes/media.php:5034 wp-includes/js/dist/block-editor.js:59866
 msgid "Insert from URL"
-msgstr "Invoegen via URL"
+msgstr "Via URL invoegen"
 
 #. translators: This is a would-be plural string used in the media manager. If
 #. there is not a word you can use in your language to avoid issues with the
@@ -17809,7 +17809,7 @@ msgstr "Kolommen"
 
 #: wp-includes/media-template.php:768
 msgid "Alt Text"
-msgstr "Alt-tekst"
+msgstr "Alt-text"
 
 #: wp-includes/media-template.php:666 wp-admin/upload.php:190
 msgid "Attachment Details"
@@ -17859,7 +17859,7 @@ msgstr "Galerij invoegen"
 #: wp-includes/media-template.php:264 wp-includes/js/dist/components.js:51951
 #: wp-admin/includes/media.php:2255
 msgid "Drop files to upload"
-msgstr "Sleep bestanden om te uploaden"
+msgstr "Plak bestanden om te uploaden"
 
 #: wp-includes/media.php:5041
 msgid "Create gallery"
@@ -17950,7 +17950,7 @@ msgstr "<strong>Fout:</strong> deze gebruikersnaam is al geregistreerd. Kies een
 
 #: wp-includes/ms-functions.php:506 wp-admin/user-new.php:377
 msgid "Please enter a valid email address."
-msgstr "Geef een geldig e-mailadres op."
+msgstr "Een geldig e-mailadres invoeren."
 
 #: wp-includes/ms-functions.php:168 wp-admin/user-new.php:374
 msgid "The requested user does not exist."
@@ -17976,7 +17976,7 @@ msgstr "Roteren afbeelding mislukt."
 #: wp-includes/class-wp-image-editor-gd.php:376
 #: wp-includes/class-wp-image-editor-gd.php:404
 msgid "Image crop failed."
-msgstr "Bijsnijden afbeelding mislukt."
+msgstr "Afbeelding bijsnijden is mislukt."
 
 #: wp-includes/class-wp-image-editor-gd.php:205
 #: wp-includes/class-wp-image-editor-gd.php:246
@@ -18091,7 +18091,7 @@ msgstr "XML-RPC diensten zijn uitgeschakeld voor deze site."
 
 #: wp-includes/class-wp-admin-bar.php:473 wp-admin/menu-header.php:295
 msgid "Skip to toolbar"
-msgstr "Spring naar toolbar"
+msgstr "Ga naar toolbar"
 
 #: wp-includes/class-wp-customize-manager.php:5307
 msgid "Header Text Color"
@@ -18172,8 +18172,8 @@ msgstr "Een sitetitel invoeren."
 #: wp-includes/ms-functions.php:685
 msgid "Site name must be at least %s character."
 msgid_plural "Site name must be at least %s characters."
-msgstr[0] "Sitenaam moet minimaal %s teken lang zijn."
-msgstr[1] "Sitenaam moet minimaal %s tekens lang zijn."
+msgstr[0] "Sitenaam moet minimaal %s karakter lang zijn."
+msgstr[1] "Sitenaam moet minimaal %s karakters lang zijn."
 
 #: wp-includes/ms-functions.php:671
 msgid "That name is not allowed."
@@ -18358,11 +18358,11 @@ msgstr "Link ID"
 
 #: wp-includes/widgets/class-wp-widget-links.php:159
 msgid "Link rating"
-msgstr "Link waardering"
+msgstr "Linkwaardering"
 
 #: wp-includes/widgets/class-wp-widget-links.php:158
 msgid "Link title"
-msgstr "Link titel"
+msgstr "Linktitel"
 
 #. translators: %s: Theme directory name.
 #: wp-includes/class-wp-theme.php:478 wp-includes/class-wp-theme.php:499
@@ -18484,7 +18484,7 @@ msgstr "Je hebt geen toestemming om een term toe te voegen aan één van de opge
 
 #: wp-includes/class-wp-xmlrpc-server.php:1643
 msgid "Ambiguous term name used in a hierarchical taxonomy. Please use term ID instead."
-msgstr "Onduidelijke term-naam gebruikt in een hiërarchische taxonomie. Graag een term-ID gebruiken."
+msgstr "Onduidelijke termnaam gebruikt in een hiërarchische taxonomie. Gebruik een term ID in plaats daarvan."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1587
 #: wp-includes/class-wp-xmlrpc-server.php:1614
@@ -18572,7 +18572,7 @@ msgstr "Je kunt een %s bestand maken via een webinterface, maar dit werkt niet v
 #. translators: 1: Link to new site, 2: Login URL, 3: Username.
 #: wp-signup.php:559
 msgid "%1$s is your new site. <a href=\"%2$s\">Log in</a> as &#8220;%3$s&#8221; using your existing password."
-msgstr "%1$s is je nieuwe site. <a href=\"%2$s\">Log in</a> als &#8220;%3$s&#8221; met je bestaande wachtwoord."
+msgstr "%1$s is je nieuwe site. <a href=\"%2$s\">Login</a> als &#8220;%3$s&#8221; met je bestaande wachtwoord."
 
 #. translators: 1: Site URL, 2: Username, 3: User email address, 4: Lost
 #. password URL.
@@ -18770,7 +18770,7 @@ msgstr "Je moet een actie specificeren die kan worden geverifieerd door gebruik 
 #. translators: 1: Login URL, 2: Network home URL.
 #: wp-activate.php:200
 msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
-msgstr "Je account is nu geactiveerd. <a href=\"%1$s\">Log in</a> of ga terug naar de <a href=\"%2$s\">homepage</a>."
+msgstr "Je account is nu geactiveerd. <a href=\"%1$s\">Login</a> of ga terug naar de <a href=\"%2$s\">homepage</a>."
 
 #. translators: 1: Site URL, 2: Login URL.
 #: wp-activate.php:192
@@ -18855,7 +18855,7 @@ msgstr "Of link naar bestaande inhoud"
 
 #: wp-includes/class-wp-editor.php:1891
 msgid "Enter the destination URL"
-msgstr "Geef de URL van de bestemming"
+msgstr "Voer de URL van de bestemming in"
 
 #: wp-includes/query.php:165 wp-includes/query.php:191
 #: wp-includes/query.php:217 wp-includes/query.php:246
@@ -19016,11 +19016,11 @@ msgstr "Breedte grote afbeeldingen"
 
 #: wp-includes/class-wp-xmlrpc-server.php:644
 msgid "Medium size image height"
-msgstr "Middelgrote afbeelding hoogte"
+msgstr "Medium grootte afbeeldingshoogte"
 
 #: wp-includes/class-wp-xmlrpc-server.php:639
 msgid "Medium size image width"
-msgstr "Breedte gemiddelde afbeelding"
+msgstr "Medium grootte afbeeldingbreedte"
 
 #: wp-includes/class-wp-xmlrpc-server.php:634
 msgid "Crop thumbnail to exact dimensions"
@@ -19048,7 +19048,7 @@ msgstr "Reset wachtwoord"
 
 #: wp-login.php:1007
 msgid "Your password has been reset."
-msgstr "Je wachtwoord is opnieuw ingesteld."
+msgstr "Je wachtwoord is gereset."
 
 #: wp-login.php:1005 wp-admin/user-edit.php:734
 msgid "Password Reset"
@@ -19401,7 +19401,7 @@ msgstr "Deze site bestaat al!"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1249
 msgid "Please enter an item title"
-msgstr "Voer een item titel in"
+msgstr "Een item titel invoeren"
 
 #: wp-includes/ms-functions.php:695
 msgid "Sorry, site names must have letters too!"
@@ -19456,7 +19456,7 @@ msgstr "De opgegeven URL is ongeldig."
 #: wp-includes/class-wp-image-editor-gd.php:225
 #: wp-includes/class-wp-image-editor-imagick.php:363
 msgid "Could not calculate resized image dimensions"
-msgstr "De afmetingen van de geschaalde afbeelding konden niet worden berekend"
+msgstr "Kon de dimensies van de aangepaste afmetingen van de afbeelding niet berekenen"
 
 #. translators: %s: Number of completed requests.
 #: wp-includes/post.php:820
@@ -19903,7 +19903,7 @@ msgstr "E-mailadres:"
 
 #: wp-signup.php:287
 msgid "(Must be at least 4 characters, lowercase letters and numbers only.)"
-msgstr "(Moet minimaal 4 tekens zijn, alleen kleine letters en cijfers.)"
+msgstr "(Moet minimaal 4 karakters zijn, alleen kleine letters en cijfers.)"
 
 #: wp-signup.php:219
 msgid "Privacy:"
@@ -19958,7 +19958,7 @@ msgstr "<strong>Fout:</strong> het e-mailadres is niet correct."
 
 #: wp-includes/user.php:3521
 msgid "<strong>Error:</strong> Please type your email address."
-msgstr "<strong>Fout:</strong> vul je e-mailadres in."
+msgstr "<strong>Fout:</strong> type je e-mailadres in."
 
 #: wp-includes/user.php:3127 wp-includes/user.php:3131
 #: wp-includes/user.php:3137 wp-includes/user.php:3158
@@ -19970,7 +19970,7 @@ msgstr "Ongeldige sleutel."
 #. translators: Password reset notification email subject. %s: Site title.
 #: wp-includes/user.php:3350
 msgid "[%s] Password Reset"
-msgstr "[%s] Wachtwoord reset"
+msgstr "[%s] wachtwoord reset"
 
 #: wp-includes/user.php:3071
 msgid "Password reset is not allowed for this user"
@@ -20009,7 +20009,7 @@ msgstr "<strong>Fout:</strong> Het wachtwoordveld is leeg."
 
 #: wp-includes/user.php:171
 msgid "<strong>Error:</strong> The username field is empty."
-msgstr "<strong>Fout:</strong> Het gebruikersnaamveld is leeg."
+msgstr "<strong>Fout:</strong> het gebruikersnaamveld is leeg."
 
 #: wp-includes/class-wp-theme.php:311
 msgid "Stylesheet is missing."
@@ -20045,7 +20045,7 @@ msgstr "Lege term."
 #: wp-includes/script-loader.php:1225
 msgctxt "password strength"
 msgid "Medium"
-msgstr "Gemiddeld"
+msgstr "Medium"
 
 #: wp-includes/taxonomy.php:250
 msgid "Separate pattern categories with commas"
@@ -20278,7 +20278,7 @@ msgstr "Beschermd: %s"
 #. title.
 #: wp-includes/pluggable.php:2314
 msgid "[%s] New User Registration"
-msgstr "[%s] Registratie nieuwe gebruiker"
+msgstr "[%s] registratie nieuwe gebruiker"
 
 #. translators: %s: User login.
 #: wp-includes/pluggable.php:2307 wp-includes/pluggable.php:2372
@@ -20387,7 +20387,7 @@ msgstr "Deze gebruikersnaam is al geactiveerd."
 
 #: wp-includes/ms-functions.php:1225
 msgid "Could not create user"
-msgstr "Gebruiker kon niet worden aangemaakt"
+msgstr "Kon gebruiker niet aanmaken"
 
 #: wp-includes/ms-functions.php:1202
 msgid "Invalid activation key."
@@ -20395,7 +20395,7 @@ msgstr "Ongeldige activeringssleutel."
 
 #: wp-includes/class-wp-customize-control.php:652
 msgid "Please enter a page title"
-msgstr "Voer een pagina titel in"
+msgstr "Een paginatitel invoeren"
 
 #: wp-includes/ms-functions.php:562
 msgid "That username is currently reserved but may be available in a couple of days."
@@ -20423,7 +20423,7 @@ msgstr "Je kunt dat e-mailadres niet gebruiken om je aan te melden. Er zijn prob
 
 #: wp-includes/ms-functions.php:284
 msgid "That user does not exist."
-msgstr "Die gebruiker bestaat niet."
+msgstr "Deze gebruiker bestaat niet."
 
 #: wp-includes/class-wp-locale.php:220
 #: wp-includes/customize/class-wp-customize-date-time-control.php:203
@@ -20568,7 +20568,7 @@ msgstr "Uitlijnen"
 #: wp-includes/js/dist/block-library.js:56324
 #: wp-includes/js/dist/block-library.js:56334
 msgid "Loop"
-msgstr "Lus"
+msgstr "Loop"
 
 #: wp-includes/js/dist/block-editor.js:43090
 #: wp-includes/js/dist/block-library.js:4477
@@ -21749,7 +21749,7 @@ msgstr "Er zijn geen opties voor deze widget."
 
 #: wp-includes/user.php:3505 wp-admin/includes/user.php:152
 msgid "<strong>Error:</strong> Please enter a username."
-msgstr "<strong>Fout:</strong> vul een gebruikersnaam in."
+msgstr "<strong>Fout:</strong> voer een gebruikersnaam in."
 
 #: wp-includes/class-wp-editor.php:1335 wp-includes/media-template.php:1212
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
@@ -22134,7 +22134,7 @@ msgstr "Volledige grootte"
 #: wp-admin/includes/class-custom-background.php:631
 #: wp-admin/includes/media.php:1204
 msgid "Medium"
-msgstr "Gemiddeld"
+msgstr "Medium"
 
 #: wp-includes/class-wp-editor.php:1341
 #: wp-includes/customize/class-wp-customize-background-position-control.php:65
@@ -22208,7 +22208,7 @@ msgstr "Thumbnail"
 #: wp-includes/js/dist/block-editor.js:64693
 #: wp-admin/includes/image-edit.php:64 wp-admin/includes/image-edit.php:161
 msgid "Scale"
-msgstr "Schaal"
+msgstr "Schalen"
 
 #: wp-includes/class-wp-editor.php:1185
 #: wp-includes/js/dist/customize-widgets.js:923
@@ -22404,7 +22404,7 @@ msgstr "RSS"
 #: wp-includes/js/dist/block-library.js:18398
 #: wp-admin/includes/dashboard.php:1402 wp-admin/setup-config.php:272
 msgid "Submit"
-msgstr "Verzenden"
+msgstr "Indienen"
 
 #. translators: Name of a comment's author after being anonymized.
 #: wp-includes/class-wp-theme.php:1022 wp-includes/comment-template.php:40
