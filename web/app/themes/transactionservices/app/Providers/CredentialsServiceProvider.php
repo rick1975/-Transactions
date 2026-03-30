@@ -257,109 +257,216 @@ class CredentialsServiceProvider extends ServiceProvider
         }
         ?>
         <div class="wrap">
-            <h1>Credential bewerken</h1>
+            <style>
+                .cred-edit-card {
+                    background: #fff;
+                    border-radius: 12px;
+                    border: 1px solid #e2e8f0;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+                    padding: 32px;
+                    margin-top: 16px;
+                    max-width: 860px;
+                }
+                .cred-edit-group {
+                    margin-bottom: 24px;
+                }
+                .cred-edit-group label {
+                    display: block;
+                    font-size: 11px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    color: #8a92a6;
+                    margin-bottom: 6px;
+                }
+                .cred-edit-group input[type="text"],
+                .cred-edit-group input[type="date"],
+                .cred-edit-group select {
+                    width: 100%;
+                    border: 1px solid #e2e8f0;
+                    border-radius: 8px;
+                    padding: 10px 14px;
+                    font-size: 13px;
+                    color: #333;
+                    background: #fff;
+                    box-shadow: none;
+                    outline: none;
+                    transition: border-color 0.15s;
+                    box-sizing: border-box;
+                }
+                .cred-edit-group input:focus,
+                .cred-edit-group select:focus {
+                    border-color: #2271b1;
+                    box-shadow: 0 0 0 1px #2271b1;
+                }
+                .cred-edit-logo-preview {
+                    background: #f8f9fb;
+                    border: 1px solid #e2e8f0;
+                    border-radius: 8px;
+                    padding: 12px 16px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    min-width: 100px;
+                    min-height: 60px;
+                }
+                .cred-edit-logo-preview img {
+                    max-height: 50px;
+                    max-width: 180px;
+                    object-fit: contain;
+                }
+                .cred-edit-logo-row {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                }
+                .cred-edit-logo-row input {
+                    flex: 1;
+                }
+                .cred-edit-divider {
+                    border: none;
+                    border-top: 1px solid #f0f0f0;
+                    margin: 28px 0;
+                }
+                .cred-edit-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 16px;
+                }
+                .cred-edit-actions {
+                    display: flex;
+                    gap: 12px;
+                    margin-top: 32px;
+                    padding-top: 24px;
+                    border-top: 1px solid #f0f0f0;
+                }
+                .cred-edit-hint {
+                    font-size: 11px;
+                    color: #aaa;
+                    margin-top: 5px;
+                }
+                .cred-edit-section-title {
+                    font-size: 11px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.08em;
+                    color: #444;
+                    margin-bottom: 20px;
+                }
+            </style>
+
+            <h1 class="wp-heading-inline">Credential bewerken</h1>
             <a href="<?= admin_url('admin.php?page=credentials-overzicht') ?>" class="page-title-action">
                 ← Terug naar overzicht
             </a>
 
-            <form method="POST" style="margin-top: 24px;">
+            <form method="POST">
                 <?php wp_nonce_field('credentials_edit', 'credentials_nonce'); ?>
                 <input type="hidden" name="credential_id" value="<?= $row['id'] ?>">
 
-                <table class="form-table">
-                    <tr>
-                        <th><label for="partij1">Partij 1</label></th>
-                        <td><input type="text" id="partij1" name="partij1" value="<?= esc_attr($row['partij1']) ?>" class="regular-text"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="omschrijving1">Omschrijving 1</label></th>
-                        <td><input type="text" id="omschrijving1" name="omschrijving1" value="<?= esc_attr($row['omschrijving1']) ?>" class="large-text"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="partij2">Partij 2</label></th>
-                        <td><input type="text" id="partij2" name="partij2" value="<?= esc_attr($row['partij2']) ?>" class="regular-text"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="omschrijving2">Omschrijving 2</label></th>
-                        <td><input type="text" id="omschrijving2" name="omschrijving2" value="<?= esc_attr($row['omschrijving2']) ?>" class="large-text"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="logo1">Logo partij 1</label></th>
-                        <td>
-                            <?php if (!empty($row['logo1'])): ?>
-                                <img id="logo1-preview" src="<?= esc_url(home_url('/app/uploads/' . $row['logo1'])) ?>"
-                                     style="max-height: 60px; object-fit: contain; display: block; margin-bottom: 8px;">
-                            <?php else: ?>
-                                <img id="logo1-preview" style="max-height: 60px; object-fit: contain; display: none; margin-bottom: 8px;">
-                            <?php endif; ?>
-                            <div style="display: flex; gap: 8px; align-items: center;">
-                                <input type="text" id="logo1" name="logo1" value="<?= esc_attr($row['logo1'] ?? '') ?>" class="large-text">
-                                <button type="button" class="button" onclick="openMediaUploader('logo1')">Kies afbeelding</button>
-                            </div>
-                            <p class="description">Pad bijv: 2024/10/logo.png</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th><label for="logo2">Logo partij 2</label></th>
-                        <td>
-                            <?php if (!empty($row['logo2'])): ?>
-                                <img id="logo2-preview" src="<?= esc_url(home_url('/app/uploads/' . $row['logo2'])) ?>"
-                                     style="max-height: 60px; object-fit: contain; display: block; margin-bottom: 8px;">
-                            <?php else: ?>
-                                <img id="logo2-preview" style="max-height: 60px; object-fit: contain; display: none; margin-bottom: 8px;">
-                            <?php endif; ?>
-                            <div style="display: flex; gap: 8px; align-items: center;">
-                                <input type="text" id="logo2" name="logo2" value="<?= esc_attr($row['logo2'] ?? '') ?>" class="large-text">
-                                <button type="button" class="button" onclick="openMediaUploader('logo2')">Kies afbeelding</button>
-                            </div>
-                            <p class="description">Pad bijv: 2024/10/logo.png</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th><label for="datum">Datum</label></th>
-                        <td><input type="date" id="datum" name="datum" value="<?= esc_attr($row['datum']) ?>"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="sector">Sector</label></th>
-                        <td>
-                            <select id="sector" name="sector">
-                                <?php foreach ([
-                                    'agriculture'                                => 'Agriculture',
-                                    'business-services'                          => 'Business services',
-                                    'education'                                  => 'Education',
-                                    'financial-services'                         => 'Financial services',
-                                    'food-and-Consumer-goods'                    => 'Food and Consumer goods',
-                                    'healthcare'                                 => 'Healthcare',
-                                    'industrial-services-Construction-Utilities' => 'Industrial services & Construction & Utilities',
-                                    'information-Technology'                     => 'Information Technology',
-                                    'leisure'                                    => 'Leisure',
-                                    'logistics'                                  => 'Logistics',
-                                    'media'                                      => 'Media',
-                                    'production'                                 => 'Production',
-                                    'software'                                   => 'Software',
-                                ] as $value => $label): ?>
-                                    <option value="<?= $value ?>" <?= selected($row['sector'], $value, false) ?>>
-                                        <?= $label ?>
-                                    </option>
-                                <?php endforeach; ?>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th><label for="type">Type</label></th>
-                        <td>
+                <div class="cred-edit-card">
+
+                    <p class="cred-edit-section-title">Partij 1</p>
+
+                    <div class="cred-edit-group">
+                        <label for="partij1">Naam</label>
+                        <input type="text" id="partij1" name="partij1" value="<?= esc_attr($row['partij1']) ?>">
+                    </div>
+
+                    <div class="cred-edit-group">
+                        <label for="omschrijving1">Omschrijving</label>
+                        <input type="text" id="omschrijving1" name="omschrijving1" value="<?= esc_attr($row['omschrijving1']) ?>">
+                    </div>
+
+                    <div class="cred-edit-group">
+                        <label>Logo</label>
+                        <div class="cred-edit-logo-preview">
+                            <img id="logo1-preview"
+                                 src="<?= !empty($row['logo1']) ? esc_url(home_url('/app/uploads/' . $row['logo1'])) : '' ?>"
+                                 style="<?= empty($row['logo1']) ? 'display:none' : '' ?>">
+                        </div>
+                        <div class="cred-edit-logo-row">
+                            <input type="text" id="logo1" name="logo1" value="<?= esc_attr($row['logo1'] ?? '') ?>" placeholder="2024/10/logo.png">
+                            <button type="button" class="button" onclick="openMediaUploader('logo1')">Kies afbeelding</button>
+                        </div>
+                    </div>
+
+                    <hr class="cred-edit-divider">
+
+                    <p class="cred-edit-section-title">Partij 2</p>
+
+                    <div class="cred-edit-group">
+                        <label for="partij2">Naam</label>
+                        <input type="text" id="partij2" name="partij2" value="<?= esc_attr($row['partij2']) ?>">
+                    </div>
+
+                    <div class="cred-edit-group">
+                        <label for="omschrijving2">Omschrijving</label>
+                        <input type="text" id="omschrijving2" name="omschrijving2" value="<?= esc_attr($row['omschrijving2']) ?>">
+                    </div>
+
+                    <div class="cred-edit-group">
+                        <label>Logo</label>
+                        <div class="cred-edit-logo-preview">
+                            <img id="logo2-preview"
+                                 src="<?= !empty($row['logo2']) ? esc_url(home_url('/app/uploads/' . $row['logo2'])) : '' ?>"
+                                 style="<?= empty($row['logo2']) ? 'display:none' : '' ?>">
+                        </div>
+                        <div class="cred-edit-logo-row">
+                            <input type="text" id="logo2" name="logo2" value="<?= esc_attr($row['logo2'] ?? '') ?>" placeholder="2024/10/logo.png">
+                            <button type="button" class="button" onclick="openMediaUploader('logo2')">Kies afbeelding</button>
+                        </div>
+                    </div>
+
+                    <hr class="cred-edit-divider">
+
+                    <p class="cred-edit-section-title">Details</p>
+
+                    <div class="cred-edit-grid">
+                        <div class="cred-edit-group">
+                            <label for="datum">Datum</label>
+                            <input type="date" id="datum" name="datum" value="<?= esc_attr($row['datum']) ?>">
+                        </div>
+                        <div class="cred-edit-group">
+                            <label for="type">Type</label>
                             <select id="type" name="type">
                                 <?php foreach (['aankoop' => 'Aankoop', 'verkoop' => 'Verkoop', 'financiering' => 'Financiering'] as $value => $label): ?>
-                                    <option value="<?= $value ?>" <?= selected($row['type'], $value, false) ?>>
-                                        <?= $label ?>
-                                    </option>
+                                    <option value="<?= $value ?>" <?= selected($row['type'], $value, false) ?>><?= $label ?></option>
                                 <?php endforeach; ?>
                             </select>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
 
-                <?php submit_button('Opslaan'); ?>
+                    <div class="cred-edit-group">
+                        <label for="sector">Sector</label>
+                        <select id="sector" name="sector">
+                            <?php foreach ([
+                                'agriculture'                                => 'Agriculture',
+                                'business-services'                          => 'Business services',
+                                'education'                                  => 'Education',
+                                'financial-services'                         => 'Financial services',
+                                'food-and-Consumer-goods'                    => 'Food and Consumer goods',
+                                'healthcare'                                 => 'Healthcare',
+                                'industrial-services-Construction-Utilities' => 'Industrial services & Construction & Utilities',
+                                'information-Technology'                     => 'Information Technology',
+                                'leisure'                                    => 'Leisure',
+                                'logistics'                                  => 'Logistics',
+                                'media'                                      => 'Media',
+                                'production'                                 => 'Production',
+                                'software'                                   => 'Software',
+                            ] as $value => $label): ?>
+                                <option value="<?= $value ?>" <?= selected($row['sector'], $value, false) ?>><?= $label ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="cred-edit-actions">
+                        <button type="submit" class="button button-primary">Opslaan</button>
+                        <a href="<?= admin_url('admin.php?page=credentials-overzicht') ?>" class="button">Annuleren</a>
+                    </div>
+
+                </div>
             </form>
         </div>
 
