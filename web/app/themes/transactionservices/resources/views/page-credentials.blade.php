@@ -57,7 +57,14 @@
         </div>
 
         {{-- Grid view --}}
-        <div x-show="view === 'grid'" class="grid md:grid-cols-3 gap-8">
+        <div x-show="view === 'grid'"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 translate-y-1"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100"
+             x-transition:leave-end="opacity-0"
+             class="grid md:grid-cols-3 gap-8">
             @foreach($credentials as $index => $credential)
                 <div
                     x-show="isVisible({{ $index }}, '{{ $credential['type'] }}', '{{ $credential['sector'] }}')"
@@ -74,7 +81,14 @@
         </div>
 
         {{-- List view --}}
-        <div x-show="view === 'list'" class="flex flex-col divide-y divide-slate-200">
+        <div x-show="view === 'list'"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 translate-y-1"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100"
+             x-transition:leave-end="opacity-0"
+             class="flex flex-col divide-y divide-slate-200">
             @foreach($credentials as $index => $credential)
                 <div
                     x-show="isVisible({{ $index }}, '{{ $credential['type'] }}', '{{ $credential['sector'] }}')"
